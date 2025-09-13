@@ -1,0 +1,31 @@
+.stats-container {
+  background-color: #fce8d4 !important;  
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat-box {
+  background: #fdfdfd;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px;
+  
+}
+
+.stat-box h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0;
+  color: #222;
+ 
+}
+
+.stat-box p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #555;
+}

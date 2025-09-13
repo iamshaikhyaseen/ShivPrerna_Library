@@ -1,0 +1,91 @@
+.footer {
+  background: #fce8d4;
+  border-radius: 20px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 1px;            
+  padding: 1px 0;  
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+.admin-btn {
+  background: #a63e31;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.admin-btn:hover {
+  background: #c22a19;
+  color: white;
+}
+
+.details {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.contact, .address, .join-us{
+  flex: 1;
+  min-width: 180px;
+  color: #333;
+  text-align: left;
+  gap: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.address , .contact, .join-us{
+  text-align: center;
+}
+
+
+.comp {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 1%;
+}
+.comp:hover{
+  font-weight: bold;
+  color: #333;
+}
+
+.link{
+  text-decoration: none;
+  color: #333;
+}
+
+.link:hover{
+color: brown;
+font-weight: 1%;
+}

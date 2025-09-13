@@ -1,0 +1,84 @@
+
+/* Categories.css */
+.categories-container {
+  background: #fcf9f2;
+  border-radius: 40px;
+  padding: 20px 30px;
+  width: 220px;
+  box-shadow: 0 4px 16px #f1e2d3 ;
+  margin-left: -6%;
+  margin-top: 2.5%;
+  border: 0.1px solid black;
+}
+
+.categories-heading {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.1px;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 10%;
+}
+
+.category-item {
+  margin-bottom: 5px;
+}
+
+.category-link {
+  text-decoration: none;
+  /* color:  #a63e31; */
+  color: #333;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: 1.05em;
+  display: block; /* Ensures each link is on its own line */
+  padding: 3px 0;
+  transition: color 0.2s;
+}
+
+.category-link:hover {
+  color: #a63e31;
+  text-shadow: #333;
+  font-weight: bolder;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;           /* full width */
+    border-radius: 0;      /* remove side rounding for clean mobile look */
+    padding: 10px;         /* compact padding */
+  }
+
+  .details {
+    flex-direction: column; /* stack sections vertically */
+    gap: 20px;              /* reduce gap */
+    align-items: center;    /* center align */
+  }
+
+  .contact, .address, .join-us {
+    text-align: center;
+    min-width: unset;       /* allow them to shrink properly */
+    margin: 0;              /* reset side margins */
+  }
+
+  .tagline {
+    font-size: 0.9rem;      /* slightly smaller font */
+    max-width: 90%;         /* fit better on mobile */
+  }
+
+  .admin-btn {
+    padding: 6px 16px;      /* smaller button */
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;      /* adjust footer text size */
+  }
+}
+
+

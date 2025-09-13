@@ -1,0 +1,124 @@
+/* Container: centers everything on the page */
+.radial-container{
+  position: relative;
+  width: min(70vw, 520px);   /* responsive size - change as needed */
+  margin: -30rem 0;
+  margin-left:55%;
+  margin-bottom: 3%;
+  aspect-ratio: 1/1;        /* keeps container square */
+  display: grid;
+  place-items: center;
+}
+
+/* Avatar: circular image centered */
+.avatar{
+  position: relative;
+  width: clamp(140px, 30vw, 260px); /* responsive avatar size */
+  height: auto;
+  z-index: 2;
+}
+.avatar img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  border: 6px solid white; /* optional ring */
+}
+
+/* Laws wrapper sits on the same center and is used to position items */
+.laws{
+  position: absolute;
+  inset: 0;                /* fill the container */
+  display: block;
+  pointer-events: none;    /* allows clicks to pass through to avatar if needed */
+  z-index: 1;
+}
+
+/* Common style for each law label */
+.law{
+  --radius: clamp(110px, 26vw, 180px); /* distance from center to label */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 calc(var(--radius)); /* rotate around a point on the vertical axis */
+  white-space: nowrap;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: clamp(.78rem, 1.6vw, 1rem);
+  background: rgba(255,255,255,0.95);
+  padding: .35rem .6rem;
+  border-radius: .6rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  pointer-events: auto; /* if you want them clickable */
+  transform: translate(-50%, -50%); /* baseline, will be overridden below */
+}
+
+/* Position the 5 items around the circle.
+   Each rotates the wrapper then translates outward, then counter-rotates the label
+   so the text remains horizontal. */
+.law:nth-child(1){
+  transform:
+    translate(-69%, -250%)
+    rotate(-90deg)
+    translateY(calc(-1 * var(--radius)))
+    rotate(90deg);
+}
+.law:nth-child(2){
+  transform:
+    translate(-20%, -10%)
+    rotate(-18deg)
+    translateY(calc(-1 * var(--radius)))
+    rotate(18deg);
+}
+.law:nth-child(3){
+  transform:
+    translate(-10%, 20%)
+    rotate(54deg)
+    translateY(calc(-1 * var(--radius)))
+    rotate(-54deg);
+}
+.law:nth-child(4){
+  transform:
+    translate(-12%, -80%)
+    rotate(126deg)
+    translateY(calc(-1 * var(--radius)))
+    rotate(-126deg);
+}
+.law:nth-child(5){
+  transform:
+    translate(-130%, -245%)
+    rotate(198deg)
+    translateY(calc(-1 * var(--radius)))
+    rotate(-198deg);
+}
+.law:nth-child(6){
+  transform:
+    translate(-30%, -30%)
+    rotate(198deg)
+    translateY(calc(-1 * var(--radius)))
+    rotate(-198deg);
+    width: 400px;
+    overflow: hidden;    
+    word-wrap: break-word; 
+    white-space: normal;      
+    padding: 10px;  
+    text-align: justify;
+}
+
+
+
+/* Optional: hover/touch affordance */
+/* .law:hover{
+  transform: translate(-50%, -50%)
+             rotate(-90deg)
+             translateY(calc(-1 * var(--radius)))
+             rotate(90deg)
+             scale(1.1); 
+  z-index: 3;
+} */
+
+/* Make sure long law texts wrap on small screens */
+@media (max-width: 420px){
+  .law{ white-space: normal; text-align:center; max-width: 36vw; }
+}

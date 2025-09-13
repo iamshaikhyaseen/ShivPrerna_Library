@@ -1,0 +1,11 @@
+.Carousel{
+    height: 20vh;
+    width:20vh;
+    border-radius: 20px !important;
+}
+.carousel {
+    border-radius: 20px !important;
+}
+.btn{
+    color: black;
+}

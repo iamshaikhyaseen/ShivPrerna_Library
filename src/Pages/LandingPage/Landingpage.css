@@ -1,0 +1,43 @@
+/* background image */
+.bgi {
+  background-image: url(../../assets/MainImage5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 115vh;
+  position: relative;
+}
+
+.bgi3{
+  background-color: #fcf0e2 ;
+  height: 85%;
+} 
+
+.bgi2{
+  background-color: #fcf0e2 ;
+  height: 60%;
+}
+
+.bgi4-wrapper{
+  background-color: #fcf0e2 ;
+}
+
+/* Category navigation */
+.subnav-wrapper {
+  position: absolute;
+  top: 10%; 
+  left: 8%; 
+}
+
+/* Enroll Button */
+.btn-wrapper {
+  position: absolute;
+  left: 20%;
+  top: 101%;
+  width: 100%;
+}
+
+.book-wrapper{
+  width: 80vh;
+  margin-left: 5%;
+}
