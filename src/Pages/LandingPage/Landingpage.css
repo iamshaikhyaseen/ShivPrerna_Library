@@ -20,6 +20,7 @@
 
 .bgi4-wrapper{
   background-color: #fcf0e2 ;
+  display: flex;
 }
 
 /* Category navigation */

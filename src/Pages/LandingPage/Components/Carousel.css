@@ -1,11 +1,52 @@
-.Carousel{
-    height: 20vh;
-    width:20vh;
-    border-radius: 20px !important;
+/* Desktop / Default */
+.Carousel { 
+  height: 20vh;
+  width: 20vh;
+  border-radius: 20px !important;
+  overflow: hidden; /* prevent overflow */
 }
+
 .carousel {
-    border-radius: 20px !important;
+  border-radius: 20px !important;
 }
-.btn{
-    color: black;
+
+.btn {
+  color: black;
+}
+
+/* Mobile Responsive (max-width: 600px) */
+@media (max-width: 600px) {
+  .Carousel {
+    width: 100% !important;     /* fit screen width */
+    height: auto !important;    /* auto height */
+    max-width: 100%;            /* no horizontal scroll */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .carousel {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .carousel-inner {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .carousel-item img {
+    width: 100% !important;     /* scale image */
+    height: auto !important;    /* keep aspect ratio */
+    object-fit: cover;          /* prevent stretching */
+    border-radius: 10px;
+    display: block;
+  }
+
+  .carousel-caption h5 {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
 }

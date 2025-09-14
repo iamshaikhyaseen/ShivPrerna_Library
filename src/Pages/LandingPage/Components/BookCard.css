@@ -33,8 +33,9 @@
 .img {
     /* height: 5% !important; */
     max-width: 35vh !important  ;
-    border-radius:40px 40px  0px 0px  !important;
+    border-radius:40px 40px  40px 40px  !important;
     padding: 2% !important;
+    margin-top: 1%;
 }
 .btn{
   margin: 0% !important;

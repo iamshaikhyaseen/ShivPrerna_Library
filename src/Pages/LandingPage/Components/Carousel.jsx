@@ -43,7 +43,7 @@ function Carousel() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={img1} className="d-block w-100" alt="img1" />
+            <img src={img1} className="carimg d-block w-100" alt="img1" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Library Image 1</h5>
             </div>

@@ -46,39 +46,5 @@
   font-weight: bolder;
 }
 
-/* Mobile responsive styles */
-@media (max-width: 600px) {
-  .navbar {
-    width: 100%;           /* full width */
-    border-radius: 0;      /* remove side rounding for clean mobile look */
-    padding: 10px;         /* compact padding */
-  }
-
-  .details {
-    flex-direction: column; /* stack sections vertically */
-    gap: 20px;              /* reduce gap */
-    align-items: center;    /* center align */
-  }
-
-  .contact, .address, .join-us {
-    text-align: center;
-    min-width: unset;       /* allow them to shrink properly */
-    margin: 0;              /* reset side margins */
-  }
-
-  .tagline {
-    font-size: 0.9rem;      /* slightly smaller font */
-    max-width: 90%;         /* fit better on mobile */
-  }
-
-  .admin-btn {
-    padding: 6px 16px;      /* smaller button */
-    font-size: 0.9rem;
-  }
-
-  .footer {
-    font-size: 0.8rem;      /* adjust footer text size */
-  }
-}
 
 

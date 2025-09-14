@@ -1,5 +1,5 @@
 import "./BookCard.css";
-import b1 from "../../../assets/bgMain.webp";
+import b1 from "../../../assets/bgMain1.jpg";
 
 
 function BookCard() {
