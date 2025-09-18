@@ -25,7 +25,7 @@
 
 
 .admin-btn {
-  background: #a63e31;
+  background: #db8351;
   border: none;
   padding: 8px 20px;
   border-radius: 10px;
@@ -33,10 +33,11 @@
   cursor: pointer;
   margin-bottom: 20px;
   align-self: center; /* keeps the Admin button centered */
+  transition: background-color 1s ease;
 }
 
 .admin-btn:hover {
-  background: #c22a19;
+  background: #ab4026;
   color: white;
 }
 

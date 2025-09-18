@@ -1,0 +1,43 @@
+.SubHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.SubTitle h6{
+   text-align: center;
+}
+
+.highlight{
+    font-weight: bold;
+    text-decoration: underline black;
+    color: green;
+}
+
+
+/* ✅ Responsive adjustments for screens below 600px */
+@media screen and (max-width: 600px) {
+  .SubHeader {
+    margin-top: 4%;        /* a little more breathing room */
+    padding: 0 4%;         /* prevent text from touching edges */
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .title h1 {
+    font-size: 20px;       /* smaller text */
+    line-height: 1.4;      /* improve readability */
+    font-weight: bold;
+  }
+
+  .SubTitle h6 {
+    font-size: 14px;       /* smaller text */
+    line-height: 1.4;      /* improve readability */
+  }
+
+  .highlight {
+    font-size: 15px;       /* slightly smaller highlight */
+  }
+}

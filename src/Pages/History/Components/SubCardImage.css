@@ -1,0 +1,39 @@
+.SubCardImageContain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-text{
+    height: 8.5rem;      /* fixed height */
+  overflow: hidden;
+  padding: 1%;
+}
+
+/* Responsive for mobile screens */
+@media screen and (max-width: 600px) {
+    .SubCardImageContain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+  .card {
+    margin-top: 1%;
+    width: 50%;       /* shrink width */
+    height: 25rem;    /* reduce height */
+  }
+
+  .card-body {
+    font-size: 0.6rem;   /* smaller text */
+    overflow-y: auto;     /* ensure text scrolls if still long */
+  }
+  .card-body h4 {
+    font-size: 1rem;
+  }
+  .card-body h6 {
+    font-size: 0.7rem;
+  }
+  
+}
+  

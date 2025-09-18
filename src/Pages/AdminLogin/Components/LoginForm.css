@@ -1,0 +1,23 @@
+.LoginFormContain {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 2%;
+  margin-top: 7%;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+
+.LoginFormContain1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LoginFormTitle {
+   text-transform:uppercase ;
+   font-weight: bold;
+}

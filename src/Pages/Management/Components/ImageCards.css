@@ -1,0 +1,83 @@
+.card {
+  max-width: 15%;
+}
+
+.MainCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainCard .card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffffa;
+}
+
+.MainCard .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.SecondRow {
+  margin-top: 1%;
+}
+
+.ThirdRow{
+  margin-bottom: 2%;
+}
+
+.Details p {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 0.5%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 40%;
+  }
+
+  .card-body h5 {
+    font-size: 1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .card-body h5,
+  .card-body p {
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .Details p {
+    width: 80%;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .Details {
+    max-height: 100px;
+    overflow: hidden;
+  }
+}

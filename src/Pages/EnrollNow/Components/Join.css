@@ -1,0 +1,95 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* space between sections */
+  align-items: center; /* ensures all child sections stay centered */
+}
+
+.IdCard,
+.Rental {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin-top: -2%;
+}
+
+.Rental {
+  margin-top: -2.9%;
+}
+
+.details1,
+.details2 {
+  width: 105%; /* make same width as image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.Idimg1,
+.Idimg2 {
+  width: 50%; /* match details width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* ✅ Mobile Responsive Styling */
+@media (max-width: 600px) {
+  .IdCard {
+    flex-direction: column; /* Image first, then text */
+    gap: 1%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Rental {
+    flex-direction: column-reverse; /* Image first, then text */
+    gap: 1%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .details1,
+  .details2 {
+    width: 95%;
+    text-align: center;
+    padding: 5px; /* reduce padding */
+  }
+
+  .Idimg1,
+  .Idimg2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    width: 90%; /* smaller image */
+    height: auto; /* keep ratio */
+    margin: 0 auto; /* center it */
+  }
+
+  .message {
+    width: 90%;
+    font-size: 14px;
+    padding: 8px;
+    margin: 15px 0; /* reduce margin */
+  }
+}

@@ -14,18 +14,40 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex: 1 1 200px;
-  
 }
 
 .stat-box h2 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin: 0;
   color: #222;
- 
 }
 
 .stat-box p {
   margin: 0.5rem 0 0;
   font-size: 1rem;
   color: #555;
+}
+
+/* ✅ Mobile Responsive (fit all in single row) */
+@media (max-width: 600px) {
+  .stats-container {
+    flex-wrap: nowrap;        /* one row */
+    gap: 1rem;                /* smaller spacing */
+    padding: 1rem;
+    justify-content: space-between; /* distribute evenly */
+  }
+
+  .stat-box {
+    flex: 1 1 calc(33.33% - 0.66rem); /* three boxes fit in row */
+    min-width: 0;                     /* prevent overflow */
+    padding: 1rem 0.5rem;            /* reduce padding */
+  }
+
+  .stat-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .stat-box p {
+    font-size: 0.85rem;
+  }
 }

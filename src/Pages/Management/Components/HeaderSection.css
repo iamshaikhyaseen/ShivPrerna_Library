@@ -1,0 +1,21 @@
+.HeaderSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 20px;
+}
+
+.HeaderSection h1 {
+  margin-top: 6%;
+}
+
+/* Responsive styles for Mobile screens < 600px */
+
+@media (max-width: 600px) {
+  .HeaderSection h1 {
+    margin-top: 16%;
+  }
+}

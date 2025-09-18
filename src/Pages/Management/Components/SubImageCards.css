@@ -1,0 +1,40 @@
+.card {
+  max-width: 15%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.SubImageCards .card{
+     border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.SubImageCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 1%;
+}
+
+/* Hover effect */
+.SubImageCards .card:hover {
+  transform: scale(1.05); /* slightly enlarge */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* stronger shadow */
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 40%;   /* bigger cards for small screens */
+  }
+  .SubImageCards {
+    gap: 3%;
+     margin: 5% 15px;
+  }
+}

@@ -3,7 +3,7 @@
   height: 20vh;
   width: 20vh;
   border-radius: 20px !important;
-  overflow: hidden; /* prevent overflow */
+  overflow: hidden;
 }
 
 .carousel {
@@ -14,39 +14,44 @@
   color: black;
 }
 
-/* Mobile Responsive (max-width: 600px) */
+/* ✅ Mobile Responsive (max-width: 600px) */
 @media (max-width: 600px) {
   .Carousel {
-    width: 100% !important;     /* fit screen width */
-    height: auto !important;    /* auto height */
-    max-width: 100%;            /* no horizontal scroll */
+    width: 100% !important;    
+    height: 60vh !important;   /* fills most of the mobile screen height */
+    max-width: 100%;
     border-radius: 10px;
     overflow: hidden;
   }
 
-  .carousel {
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
     width: 100% !important;
-    height: auto !important;
-  }
-
-  .carousel-inner {
-    width: 100% !important;
-    height: auto !important;
+    height: 100% !important;   /* take full Carousel height */
   }
 
   .carousel-item img {
-    width: 100% !important;     /* scale image */
-    height: auto !important;    /* keep aspect ratio */
-    object-fit: cover;          /* prevent stretching */
+    width: 100% !important;    
+    height: 100% !important;   /* stretch image */
+    object-fit: cover;         /* keeps proportions without distortion */
     border-radius: 10px;
     display: block;
   }
 
   .carousel-caption h5 {
     font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
   }
 
   .btn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 70%;
   }
 }

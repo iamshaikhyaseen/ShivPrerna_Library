@@ -1,0 +1,28 @@
+.ManageDetailsContain{
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ManageDetails{
+    margin-top: 6.5%;
+    text-align: center;
+    padding: 5%;
+    background-color: #ffefdf;
+    border-radius: 40px;
+    margin-bottom: 1%;
+    box-shadow: 0 3px 16px 6px rgba(0, 0.2, 0.2, 0.2);
+}
+
+.ManageDetailsContainbtn{
+background-color: rgb(4, 107, 4) !important;
+box-shadow: 0 3px 16px 6px rgba(0, 0.2, 0.2, 0.2);
+}
+.ManageDetails h4{
+    font-weight: bolder;
+}
+
+.ManageDetails p{
+    font-weight: bold;
+}
