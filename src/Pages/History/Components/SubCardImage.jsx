@@ -6,7 +6,7 @@ function SubCardImage() {
   return (
     <div className="SubCardImageContain">
       <div className="CardImage1">
-        <div className="card">
+        <div className="Historycard">
           <img src={Vision} className="cardimg card-img-top" alt="Vision" />
           <div className="card-body">
             <h4>Prof. Dr. Biswaroop Mehera</h4>
@@ -23,7 +23,7 @@ function SubCardImage() {
       </div>
 
       <div className="CardImage1">
-        <div className="card">
+        <div className="Historycard">
           <img src={Vision} className="cardimg card-img-top" alt="Vision" />
           <div className="card-body">
             <h4>Prof. Shireesh Kedare</h4>

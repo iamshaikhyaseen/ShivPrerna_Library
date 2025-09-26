@@ -8,7 +8,7 @@ function SubImageCards() {
   return (
     <div className="SubImageCards">
       {/* First Card */}
-      <div className="card">
+      <div className="ManagementCard">
         <div className="GovImg">
           <img src={G3} className="card-img-top" alt="Receptionist" />
         </div>
@@ -18,7 +18,7 @@ function SubImageCards() {
         </div>
       </div>
       {/* Second Card */}
-      <div className="card">
+      <div className="ManagementCard">
         <div className="GovImg">
           <img src={G4} className="card-img-top" alt="Member" />
         </div>
@@ -28,7 +28,7 @@ function SubImageCards() {
         </div>
       </div>
       {/* Third Card */}
-      <div className="card">
+      <div className="ManagementCard">
         <div className="GovImg">
           <img src={G5} className="card-img-top" alt="Helper" />
         </div>

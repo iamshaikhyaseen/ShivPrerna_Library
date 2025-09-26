@@ -4,7 +4,7 @@ import "./Carousel.css";
 function Carousel() {
   return (
     <div className="CarouselContainer" >
-      <div className="Carousel">
+      <div className="HistoryCarousel">
         <div id="carouselExampleIndicators" className="carousel slide">
           <div className="carousel-indicators">
             <button

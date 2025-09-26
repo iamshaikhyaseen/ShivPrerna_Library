@@ -5,7 +5,7 @@ function CardImage() {
   return (
     <div className="MainCardImage">
       <div className="CardImage1">
-        <div className="card">
+        <div className="Historycard">
           <img src={Ministor} className="cardimg card-img-top" alt="Ministor" />
           <div className="card-body">
             <h4>Hon. Dr. Shrikant Eknath Shinde </h4>

@@ -1,8 +1,8 @@
 import "./RareBooks.css";
-import Navbar from "../Management/Components/Navbar";
+import Navbar from "../LandingPage1/Components/Navbar";
 import HeaderSection from "./Components/HeaderSection";
 import Books from "./Components/Books";
-import Footer from "../LandingPage/Components/Footer";
+import Footer from "../LandingPage1/Components/Footer";
 
 function RareBooks() {
   return (

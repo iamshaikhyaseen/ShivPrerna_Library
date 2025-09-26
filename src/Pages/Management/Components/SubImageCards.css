@@ -1,4 +1,4 @@
-.card {
+.ManagementCard {
   max-width: 15%;
   border-radius: 12px;
   overflow: hidden;
@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 600px) {
-  .card {
+  .ManagementCard {
     max-width: 40%;   /* bigger cards for small screens */
   }
   .SubImageCards {

@@ -5,17 +5,17 @@
 
 .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;      /* cards align in height */
   gap: 20px;
   padding: 0 10px;
-  flex-wrap: wrap; /* allow wrapping on mobile */
+  flex-wrap: wrap;           /* allow wrapping */
 }
 
 .card {
-  width: 35vh !important;
-  max-height: 80vh;
+  flex: 1 1 30%;             /* 3 cards per row */
+  max-width: 30%;
+  min-width: 260px;          /* prevent shrinking too much */
   background-color: #fcf9f2 !important;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
   display: flex;
@@ -34,35 +34,33 @@
 }
 
 .img {
-  max-width: 35vh !important;
-  border-radius: 250px !important;
+  width: 100%;               /* make image scale with card */
+  max-width: 280px;          /* optional cap */
+  border-radius: 40px !important;
   padding: 2% !important;
   margin-top: 1%;
 }
 
 .btn {
-  margin: 0% !important;
+  margin: 0 !important;
 }
 
 /* Mobile Responsive (≤600px) */
 @media (max-width: 600px) {
   .container {
-    display: flex;
-    flex-wrap: wrap;            /* allow wrapping */
-    justify-content: center;    /* center cards */
+    justify-content: center; 
     gap: 10px;
-    padding: -40rem 5px 3rem;     /* extra bottom padding for footer */
+    padding: 0 5px 3rem;     /* fixed padding */
   }
 
   .card {
-    flex: 1 1 45%;              /* all cards same width */
-    max-width: 45%;
+    flex: 1 1 90%;           /* full width card */
+    max-width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
-    max-height: none;            /* let height grow naturally */
+    max-height: none;        /* allow natural height */
   }
 
-  /* third card will wrap to next row automatically */
   .img {
     max-width: 100%;
     height: auto;

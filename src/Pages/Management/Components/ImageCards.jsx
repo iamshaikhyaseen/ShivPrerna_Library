@@ -8,7 +8,7 @@ function ImageCards() {
     <div>
       {/* First Tow */}
       <div className="MainCard">
-        <div className="card">
+        <div className="ManagementCard">
           <div className="GovImg">
             <img src={G1} className="card-img-top" alt="Officer" />
           </div>
@@ -29,7 +29,7 @@ function ImageCards() {
       {/* Second Row  */}
       <div className="SecondRow">
         <div className="MainCard">
-          <div className="card">
+          <div className="ManagementCard">
             <div className="GovImg">
               <img src={G2} className="card-img-top" alt="Officer" />
             </div>

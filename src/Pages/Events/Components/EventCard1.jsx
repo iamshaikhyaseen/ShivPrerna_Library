@@ -1,4 +1,4 @@
-import "./EventCard.css";
+import "./EventCard1.css";
 import E11 from "../../../assets/Events/Event1.1.webp";
 import E12 from "../../../assets/Events/Event1.2.webp";
 import E13 from "../../../assets/Events/Event1.3.webp";
@@ -12,13 +12,12 @@ import E41 from "../../../assets/Events/Event4.1.webp";
 import E42 from "../../../assets/Events/Event4.2.webp";
 import E43 from "../../../assets/Events/Event4.3.webp";
 
-
-function EventCard() {
+function EventCard1() {
   return (
     <div className="Contain">
       {/* First Event */}
       <div className="Event1">
-        <div className="Carousel">
+        <div className="EventsCarousel">
           <div id="carouselEvent1" className="carousel slide">
             <div className="carousel-indicators">
               <button
@@ -76,7 +75,7 @@ function EventCard() {
         </div>
         <div className="Desc">
           <p>
-            "On 12th January 2025, the library organized National Youth Day
+            "On <span className="TextBold" >12th January 2025</span>, the library organized National Youth Day
             Reading Circle to celebrate Swami Vivekananda's birth anniversary.
             The event drew more than fifty students and local youth who gathered
             to read and discuss his writings. The highlight was a group
@@ -92,7 +91,7 @@ function EventCard() {
       <div className="Event2">
         <div className="Desc2">
           <p>
-            "On 21st February 2025, the library conducted International Mother
+            "On <span className="TextBold" >21st February 2025</span>, the library conducted International Mother
             Language Day Celebrations with over a hundred community members. The
             event featured storytelling sessions in Marathi, Hindi, and Urdu,
             along with a poetry recital by school children. A highlight was the
@@ -102,7 +101,7 @@ function EventCard() {
             roots."
           </p>
         </div>
-        <div className="Carousel">
+        <div className="EventsCarousel">
           <div id="carouselEvent2" className="carousel slide">
             <div className="carousel-indicators">
               <button
@@ -162,24 +161,24 @@ function EventCard() {
 
       {/* Third Event */}
       <div className="Event3">
-        <div className="Carousel">
+        <div className="EventsCarousel">
           <div id="carouselEvent3" className="carousel slide">
             <div className="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselEvent1"
+                data-bs-target="#carouselEvent3"
                 data-bs-slide-to="0"
                 className="active"
                 aria-current="true"
                 aria-label="Slide 1"></button>
               <button
                 type="button"
-                data-bs-target="#carouselEvent1"
+                data-bs-target="#carouselEvent3"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
               <button
                 type="button"
-                data-bs-target="#carouselEvent1"
+                data-bs-target="#carouselEvent3"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
             </div>
@@ -220,7 +219,7 @@ function EventCard() {
         </div>
         <div className="Desc">
           <p>
-            "On 7th March 2025, the library hosted Women's Literature Exhibition
+            "On <span className="TextBold" >7th March 2025</span>, the library hosted Women's Literature Exhibition
             as part of International Women's Day. The purpose was to highlight
             works authored by Indian women writers, thereby inspiring readers to
             appreciate their contribution to literature and social reforms."
@@ -232,30 +231,30 @@ function EventCard() {
       <div className="Event4">
         <div className="Desc2">
           <p>
-            "On 5th June 2025, the library celebrated World Environment Day
+            "On <span className="TextBold" >5th June 2025</span>, the library celebrated World Environment Day
             Green Reading Session. The purpose was to engage readers with books
             on ecology, conservation, and sustainable practices, while also
             arranging a tree-plantation activity in the library premises."
           </p>
         </div>
-        <div className="Carousel">
+        <div className="EventsCarousel">
           <div id="carouselEvent4" className="carousel slide">
             <div className="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselEvent2"
+                data-bs-target="#carouselEvent4"
                 data-bs-slide-to="0"
                 className="active"
                 aria-current="true"
                 aria-label="Slide 1"></button>
               <button
                 type="button"
-                data-bs-target="#carouselEvent2"
+                data-bs-target="#carouselEvent4"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
               <button
                 type="button"
-                data-bs-target="#carouselEvent2"
+                data-bs-target="#carouselEvent4"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
             </div>
@@ -299,4 +298,4 @@ function EventCard() {
   );
 }
 
-export default EventCard;
+export default EventCard1;

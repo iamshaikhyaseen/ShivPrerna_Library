@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.card {
+.Historycard {
   width: 25rem;
   height: 40rem;
   box-shadow: 0px 1px 5px #040403;
@@ -20,12 +20,12 @@
   flex-direction: column;
   overflow: hidden;
   margin-bottom: 2%;
+  border-radius: 20px;
 }
 
 .cardimg {
-  width: 100%;
-  height: 40%;
-  object-fit: cover;
+  width: 80%;
+  height: 55%;
   padding: 0;
 }
 
@@ -38,20 +38,19 @@
   width: 100%;
   padding: 10px;
   font-size: 0.9rem;
-  overflow-y: auto;
 }
 
 /* Responsive for mobile screens */
 @media screen and (max-width: 600px) {
   .card {
     margin-top: 1%;
-    width: 50%;       /* shrink width */
-    height: 25rem;    /* reduce height */
+    width: 50%; /* shrink width */
+    height: 25rem; /* reduce height */
   }
 
   .card-body {
-    font-size: 0.6rem;   /* smaller text */
-    overflow-y: auto;     /* ensure text scrolls if still long */
+    font-size: 0.6rem; /* smaller text */
+    overflow-y: auto; /* ensure text scrolls if still long */
   }
   .card-body h4 {
     font-size: 1rem;
@@ -59,5 +58,4 @@
   .card-body h6 {
     font-size: 0.7rem;
   }
-  
 }
