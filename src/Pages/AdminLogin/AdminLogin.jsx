@@ -1,7 +1,7 @@
 import "./AdminLogin.css";
 import Navbar from "../Management/Components/Navbar.jsx";
 import LoginForm from "./Components/LoginForm.jsx";
-import Footer from "../LandingPage/Components/Footer.jsx";
+import Footer from "../LandingPage1/Components/Footer.jsx";
 
 function AdminLogin() {
   return (

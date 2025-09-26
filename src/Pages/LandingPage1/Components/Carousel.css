@@ -1,4 +1,4 @@
-.Carousel {
+.LandingPageCarousel {
   width: 600px !important; /* restrict max width */
   height: 300px;
   border-radius: 20px;
@@ -30,10 +30,11 @@
 }
 
 @media (max-width: 600px) {
-  .Carousel {
-    width: 90vw;
+  .LandingPageCarousel {
+    width: 90vw !important;
     height: calc(90vw * 9 / 16);
     border-radius: 10px;
+    margin-left: 2% !important;
   }
 
   .carousel-img,

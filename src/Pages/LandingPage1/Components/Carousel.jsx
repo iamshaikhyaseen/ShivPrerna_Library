@@ -7,7 +7,7 @@ import "./Carousel.css";
 
 function Carousel() {
   return (
-    <div className="Carousel">
+    <div className="LandingPageCarousel">
       <div id="carouselExampleCaptions" className="carousel">
         <div className="carousel-indicators">
           <button
