@@ -14,7 +14,7 @@ function SubImageCards() {
         </div>
         <div className="card-body">
           <h5> Ms. Anjali Patel</h5>
-          <p className="card-text">Receptionist</p>
+          <p className="Managementcard-text">Receptionist</p>
         </div>
       </div>
       {/* Second Card */}
@@ -24,7 +24,7 @@ function SubImageCards() {
         </div>
         <div className="card-body">
           <h5> Shri Mohan Das</h5>
-          <p className="card-text">Member</p>
+          <p className="Managementcard-text">Member</p>
         </div>
       </div>
       {/* Third Card */}
@@ -34,7 +34,7 @@ function SubImageCards() {
         </div>
         <div className="card-body">
           <h5> Mr. Arjun Verma</h5>
-          <p className="card-text">Helper</p>
+          <p className="Managementcard-text">Helper</p>
         </div>
       </div>
     </div>

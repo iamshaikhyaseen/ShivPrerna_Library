@@ -14,14 +14,14 @@ function Join() {
             Note: Monday-Sunday 9.30Am to 9.00Pm
           </p>
         </div>
-        <div className="Idimg1">
-          <img src={img1} className="img" alt="IdCard" />
+        <div>
+          <img src={img1} className="Eimg img" alt="IdCard" />
         </div>
       </div>
 
       <div className="Rental">
-        <div className="Idimg2">
-          <img src={img2} className="img" alt="BookReading" />
+        <div>
+          <img src={img2} className="Eimg img" alt="BookReading" />
         </div>
         <div className="details2">
             <h3>Book Rent Charges!</h3>

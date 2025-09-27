@@ -16,8 +16,8 @@ function Review() {
       <div className="ReviewContain">
         <div className="card">
           <img src={R1} className="card-img-top" alt="ReviewImage" />
-          <div className="card-body">
-            <div className="card-text">
+          <div className="EnrollCard-body">
+            <div className="EnrollCard-text">
               <h5>
                 “A well-organized library with a wide range of books and helpful
                 staff. Perfect place for both study and leisure reading.”
@@ -29,8 +29,8 @@ function Review() {
 
         <div className="card">
           <img src={R1} className="card-img-top" alt="ReviewImage" />
-          <div className="card-body">
-            <div className="card-text">
+          <div className="EnrollCard-body">
+            <div className="EnrollCard-text">
               <h5>
                 “The membership plans are affordable, and the collection is
                 updated regularly. Highly recommended for students and book
@@ -43,8 +43,8 @@ function Review() {
 
         <div className="card">
           <img src={R1} className="card-img-top" alt="ReviewImage" />
-          <div className="card-body">
-            <div className="card-text">
+          <div className="EnrollCard-body">
+            <div className="EnrollCard-text">
               <h5>
                 “Quiet, clean, and resourceful—this library creates the perfect
                 environment for focused learning.”
@@ -56,8 +56,8 @@ function Review() {
 
         <div className="card">
           <img src={R1} className="card-img-top" alt="ReviewImage" />
-          <div className="card-body">
-            <div className="card-text">
+          <div className="EnrollCard-body">
+            <div className="EnrollCard-text">
               <h5>
                 “From novels to reference materials, the variety here is
                 impressive. The reading programs and events make it even more

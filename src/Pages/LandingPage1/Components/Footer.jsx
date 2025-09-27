@@ -1,7 +1,10 @@
 import "./Footer.css";
 import Logo from "../../../assets/Lib_Logo_Main.png";
+import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Footer() {
+  const navigate = useNavigate(); // ✅ define navigate
+
   return (
     <div className="footer">
       <div className="subfoot">
@@ -14,14 +17,22 @@ function Navbar() {
         </a>
         <h3>Shivprerna Library</h3>
         <p>Your trusted place for knowledge and community.</p>
-        <button className="admin-btn">Admin</button>
+
+        {/* ✅ button navigates to AdminLogin */}
+        <button
+          type="button"
+          className="admin-btn"
+          onClick={() => navigate("/adminlogin")}
+        >
+          Admin
+        </button>
+
         <div className="details">
-          {/* ✅ NEW WRAPPER for Contact + Address */}
           <div className="contact-address">
             <div className="contact">
               <h4>Contact Us</h4>
               <p>
-                Phone: 9226127316 <br /> Email:anspgranthalay@gmail.com
+                Phone: 9226127316 <br /> Email: anspgranthalay@gmail.com
               </p>
             </div>
 
@@ -33,7 +44,6 @@ function Navbar() {
               </p>
             </div>
           </div>
-          {/* ✅ END WRAPPER */}
 
           <div className="join-us">
             <h4>Join us</h4>
@@ -42,9 +52,11 @@ function Navbar() {
             <a className="link">Whatsapp</a>
           </div>
         </div>
+
         <div className="comp">© 2025 YS Tech Solution Pvt Ltd</div>
       </div>
     </div>
   );
 }
-export default Navbar;
+
+export default Footer;

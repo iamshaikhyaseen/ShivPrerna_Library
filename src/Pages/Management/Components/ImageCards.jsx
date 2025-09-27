@@ -14,7 +14,7 @@ function ImageCards() {
           </div>
           <div className="card-body">
             <h5> Shri Rajesh Kulkarni</h5>
-            <p className="card-text">Government Officer</p>
+            <p className="Managementcard-text">Government Officer</p>
           </div>
         </div>
         <div className="Details">
@@ -35,7 +35,7 @@ function ImageCards() {
             </div>
             <div className="card-body">
               <h5> Smt. Meenakshi Sen</h5>
-              <p className="card-text">Chief Librarian</p>
+              <p className="Managementcard-text">Chief Librarian</p>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import "./AdminLogin.css";
-import Navbar from "../Management/Components/Navbar.jsx";
+import Navbar from "../LandingPage1/Components/Navbar.jsx";
 import LoginForm from "./Components/LoginForm.jsx";
 import Footer from "../LandingPage1/Components/Footer.jsx";
 

@@ -5,10 +5,12 @@ import AllBooks from "./Pages/LandingPage1/LandingPage1.jsx";
 import RareBooks from "./Pages/RareBooks/RareBooks.jsx";
 import Events from "./Pages/Events/Events.jsx";
 import Management from "./Pages/Management/Management.jsx";
+import EnrollNow from "./Pages/EnrollNow/EnrollNow.jsx";
+import AdminLogin from "./Pages/AdminLogin/AdminLogin.jsx";
 
 function App() {
   return (
-    // <Router>
+    
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,9 +19,11 @@ function App() {
           <Route path="/rare_books" element={<RareBooks />} />
           <Route path="/events" element={<Events />} />
           <Route path="/management" element={<Management />} />
+          <Route path="/enroll" element={<EnrollNow />} />
+          <Route path="/adminlogin" element={<AdminLogin />} />
         </Routes>
       </div>
-    // </Router>
+  
   );
 }
 

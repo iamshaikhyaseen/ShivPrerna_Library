@@ -12,7 +12,7 @@
   flex-wrap: wrap;           /* allow wrapping */
 }
 
-.card {
+.Bookcard {
   flex: 1 1 30%;             /* 3 cards per row */
   max-width: 30%;
   min-width: 260px;          /* prevent shrinking too much */
@@ -24,12 +24,14 @@
   text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
+  height: 50% !important;
 }
 
-.card-body {
+.Bookcard-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 50% !important;
 }
 
 .img {
@@ -38,6 +40,9 @@
   border-radius: 40px !important;
   padding: 2% !important;
   margin-top: 1%;
+}
+.Bookcard-text{
+  padding: 4%;
 }
 
 .btn {
@@ -54,18 +59,21 @@
 
   .card {
     flex: 1 1 90%;           /* full width card */
-    max-width: 90%;
+    max-width: 60%;
     margin-top: 10px;
     margin-bottom: 10px;
-    max-height: none;        /* allow natural height */
+    
   }
 
   .img {
-    max-width: 100%;
-    height: auto;
+    max-width: 80%;
+    height: 50% !important;
     padding: 1%;
+    
   }
-
+  .Bookcard-body{
+    height:auto !important;
+  }
   .card-body h3 {
     font-size: 1rem;
   }
