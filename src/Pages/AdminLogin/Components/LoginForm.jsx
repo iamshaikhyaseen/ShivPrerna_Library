@@ -29,10 +29,7 @@ function LoginForm() {
               className="form-control"
               aria-describedby="passwordHelpBlock"
             />
-            <div id="passwordHelpBlock" className="form-text">
-              Your password must be 8-20 characters long, contain letters and
-              numbers, and must not contain spaces, special characters, or emoji.
-            </div>
+        
           </div>
         </div>
 

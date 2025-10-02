@@ -7,10 +7,10 @@ function CardImage() {
       <div className="CardImage1">
         <div className="Historycard">
           <img src={Ministor} className="cardimg card-img-top" alt="Ministor" />
-          <div className="card-body">
-            <h4>Hon. Dr. Shrikant Eknath Shinde </h4>
-            <h6>Member of Parliament</h6>
-            <p className="card-text">
+          <div className="Historycard-body">
+            <h4 className="mb-2">Hon. Dr. Shrikant Eknath Shinde</h4>
+            <h6 className="mb-1">Member of Parliament</h6>
+            <p className="card-text mt-1">
               "We are deeply grateful to the Honorable Minister, whose generous
               contribution of ₹80 lakhs and unwavering support played a vital
               role in the establishment of our library. His vision and

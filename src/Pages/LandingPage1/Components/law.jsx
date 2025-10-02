@@ -15,7 +15,7 @@ function Law() {
         <span className ="law">A library is a growing organism</span>
         <span className ="law">Every book its reader</span>
         <p className ="law">
-          Dr. S. R. Ranganathan (1892–1972), known as the Father of Library
+          <b>Dr. S. R. Ranganathan (1892–1972)</b>, known as the Father of Library
           Science in India, formulated the Five Laws of Library Science and
           developed the Colon Classification system, shaping modern library
           practices worldwide.

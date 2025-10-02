@@ -5,7 +5,6 @@
 
 .CardImage1 {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 2%;
@@ -29,32 +28,45 @@
   padding: 0;
 }
 
-.card-body {
+.Historycard-body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   text-align: center;
   width: 100%;
   padding: 10px;
   font-size: 0.9rem;
 }
 
+.card-body h4 {
+  margin-bottom: 0.5rem; /* small gap below title */
+}
+
+.card-body h6 {
+  margin-bottom: 0.25rem !important; /* tighter than Bootstrap */
+}
+
+.card-body p {
+  margin-top: 0.25rem !important; /* tighter than Bootstrap */
+}
+
+
 /* Responsive for mobile screens */
 @media screen and (max-width: 600px) {
-  .card {
-    margin-top: 1%;
-    width: 50%; /* shrink width */
+  .Historycard {
+    width: 50%;  /* shrink width */
     height: 25rem; /* reduce height */
   }
 
   .card-body {
     font-size: 0.6rem; /* smaller text */
-    overflow-y: auto; /* ensure text scrolls if still long */
+    overflow-y: auto; /* allow scroll if text is long */
   }
+
   .card-body h4 {
     font-size: 1rem;
   }
+
   .card-body h6 {
     font-size: 0.7rem;
   }

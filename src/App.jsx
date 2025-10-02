@@ -10,20 +10,20 @@ import AdminLogin from "./Pages/AdminLogin/AdminLogin.jsx";
 
 function App() {
   return (
-    
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/all_books" element={<AllBooks />} />
-          <Route path="/rare_books" element={<RareBooks />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/management" element={<Management />} />
-          <Route path="/enroll" element={<EnrollNow />} />
-          <Route path="/adminlogin" element={<AdminLogin />} />
-        </Routes>
-      </div>
-  
+    // <Router>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/all_books" element={<AllBooks />} />
+        <Route path="/rare_books" element={<RareBooks />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/management" element={<Management />} />
+        <Route path="/enroll" element={<EnrollNow />} />
+        <Route path="/adminlogin" element={<AdminLogin />} />
+      </Routes>
+    </div>
+    // </Router>
   );
 }
 
