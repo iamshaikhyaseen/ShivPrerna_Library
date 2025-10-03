@@ -20,6 +20,8 @@
   overflow: hidden;
   margin-bottom: 2%;
   border-radius: 20px;
+  min-height: 500px !important;
+  max-height: 550px !important;
 }
 
 .cardimg {
@@ -39,28 +41,29 @@
 }
 
 .card-body h4 {
-  margin-bottom: 0.5rem; /* small gap below title */
+  margin-bottom: 0.5rem;
 }
 
 .card-body h6 {
-  margin-bottom: 0.25rem !important; /* tighter than Bootstrap */
+  margin-bottom: 0.25rem !important;
 }
 
 .card-body p {
-  margin-top: 0.25rem !important; /* tighter than Bootstrap */
+  margin-top: 0.25rem !important;
 }
-
 
 /* Responsive for mobile screens */
 @media screen and (max-width: 600px) {
   .Historycard {
-    width: 50%;  /* shrink width */
-    height: 25rem; /* reduce height */
+    width: 50%;
+    height: 25rem;
+    min-height: 500px !important;
+    max-height: 550px !important;
   }
 
   .card-body {
-    font-size: 0.6rem; /* smaller text */
-    overflow-y: auto; /* allow scroll if text is long */
+    font-size: 0.6rem;
+    overflow-y: auto;
   }
 
   .card-body h4 {

@@ -1,8 +1,10 @@
 import "./EnrollBtn.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function EnrollBtn() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <div className="button">
@@ -11,7 +13,7 @@ function EnrollBtn() {
         className="btn btn-outline-dark"
         onClick={() => navigate("/enroll")}
       >
-        Enroll Now
+        {t("landingPage.categories.enrollNow")}
       </button>
     </div>
   );

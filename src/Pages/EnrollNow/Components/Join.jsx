@@ -1,17 +1,24 @@
 import "./Join.css";
 import img1 from "../../../assets/EnrollNow/IdCard.jpg";
 import img2 from "../../../assets/EnrollNow/BookReading.webp";
+import { useTranslation } from "react-i18next";
 
 function Join() {
+  const { t } = useTranslation();
+  const details = t("enrollNowPage.details", { returnObjects: true });
+
   return (
     <div className="MainContainer">
       <div className="IdCard">
         <div className="details1">
-          <h3>Getting started is simple!</h3>
+          <h3>{details[0].header}</h3>
           <p>
-            1. Just visit the library request your Library ID Card. <br />
-            2. Membership comes with a daily fee of only ₹10. <br/>
-            Note: Monday-Sunday 9.30Am to 9.00Pm
+            {details[0].description.split("\n").map((line, idx) => (
+              <span key={idx}>
+                {line}
+                <br />
+              </span>
+            ))}
           </p>
         </div>
         <div>
@@ -24,10 +31,15 @@ function Join() {
           <img src={img2} className="Eimg img" alt="BookReading" />
         </div>
         <div className="details2">
-            <h3>Book Rent Charges!</h3>
-            <p>Monthly Plan: ₹100 per Month<br /> Yearly Plan: ₹1000 per year <br />
-            Note: Monday-Sunday 9.30Am to 9.00Pm</p>
-            <p>Security Deposit: ₹500 (a standard registration charge)</p>
+          <h3>{details[1].header}</h3>
+          <p>
+            {details[1].description.split("\n").map((line, idx) => (
+              <span key={idx}>
+                {line}
+                <br />
+              </span>
+            ))}
+          </p>
         </div>
       </div>
     </div>

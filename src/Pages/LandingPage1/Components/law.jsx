@@ -1,24 +1,24 @@
 import "./law.css";
 import img1 from "../../../assets/S.R.-Ranganathan.jpg";
+import { useTranslation } from "react-i18next";
 
 function Law() {
+  const { t } = useTranslation();
+
   return (
     <div className="radial-container">
-      <div className ="avatar">
-        <img src={img1} alt="Dr. S. R. Ranganathan" />
+      <div className="avatar">
+        <img src={img1} alt={t("landingPage.laws.authorName")} />
       </div>
 
-      <div className ="laws">
-        <span className ="law">Books are for use</span>
-        <span className ="law">Every reader his/her book</span>
-        <span className ="law">Save the time of the reader</span>
-        <span className ="law">A library is a growing organism</span>
-        <span className ="law">Every book its reader</span>
-        <p className ="law">
-          <b>Dr. S. R. Ranganathan (1892–1972)</b>, known as the Father of Library
-          Science in India, formulated the Five Laws of Library Science and
-          developed the Colon Classification system, shaping modern library
-          practices worldwide.
+      <div className="laws">
+        <span className="law">{t("landingPage.laws.law1")}</span>
+        <span className="law">{t("landingPage.laws.law2")}</span>
+        <span className="law">{t("landingPage.laws.law3")}</span>
+        <span className="law">{t("landingPage.laws.law4")}</span>
+        <span className="law">{t("landingPage.laws.law5")}</span>
+        <p className="law">
+          <b>{t("landingPage.laws.authorName")}</b>, {t("landingPage.laws.authorNote")}
         </p>
       </div>
     </div>

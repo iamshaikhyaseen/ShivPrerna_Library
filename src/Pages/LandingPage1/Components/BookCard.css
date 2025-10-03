@@ -6,16 +6,16 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  align-items: stretch;      /* cards align in height */
+  align-items: stretch; /* cards align in height */
   gap: 20px;
   padding: 0 10px;
-  flex-wrap: wrap;           /* allow wrapping */
+  flex-wrap: wrap; /* allow wrapping */
 }
 
 .Bookcard {
-  flex: 1 1 30%;             /* 3 cards per row */
+  flex: 1 1 30%; /* 3 cards per row */
   max-width: 30%;
-  min-width: 260px;          /* prevent shrinking too much */
+  min-width: 260px; /* prevent shrinking too much */
   background-color: #fcf9f2 !important;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
   display: flex;
@@ -35,13 +35,14 @@
 }
 
 .img {
-  width: 100%;               /* make image scale with card */
-  max-width: 280px;          /* optional cap */
+  width: 100%; /* make image scale with card */
+  max-width: 280px; /* optional cap */
   border-radius: 40px !important;
   padding: 2% !important;
   margin-top: 1%;
+  background-color: #fcf9f2 !important;
 }
-.Bookcard-text{
+.Bookcard-text {
   padding: 4%;
 }
 
@@ -52,37 +53,35 @@
 /* Mobile Responsive (≤600px) */
 @media (max-width: 600px) {
   .container {
-    justify-content: center; 
+    justify-content: center;
     gap: 10px;
-    padding: 0 5px 3rem;     /* fixed padding */
+    padding: 0 5px 3rem; /* fixed padding */
   }
 
-  .card {
-    flex: 1 1 90%;           /* full width card */
+  .Bookcard {
+    flex: 1 1 90%; /* full width card */
     max-width: 60%;
     margin-top: 10px;
     margin-bottom: 10px;
-    
   }
 
   .img {
     max-width: 80%;
     height: 50% !important;
     padding: 1%;
-    
   }
-  .Bookcard-body{
-    height:auto !important;
+  .Bookcard-body {
+    height: auto !important;
   }
-  .card-body h3 {
+  .Bookcard-body h3 {
     font-size: 1rem;
   }
 
-  .card-body h5 {
+  .Bookcard-body h5 {
     font-size: 0.85rem;
   }
 
-  .card-body p {
+  .Bookcard-body p {
     font-size: 0.75rem;
   }
 

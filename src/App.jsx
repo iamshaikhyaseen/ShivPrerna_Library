@@ -9,6 +9,7 @@ import EnrollNow from "./Pages/EnrollNow/EnrollNow.jsx";
 import AdminLogin from "./Pages/AdminLogin/AdminLogin.jsx";
 
 function App() {
+
   return (
     // <Router>
     <div>

@@ -2,31 +2,32 @@ import "./ImageCards.css";
 import G1 from "../../../assets/GovOfficer.png";
 import G2 from "../../../assets/Libraryhead.png";
 import SubImageCards from "./SubImageCards.jsx";
+import { useTranslation } from "react-i18next";
 
 function ImageCards() {
+  const { t } = useTranslation();
+
   return (
     <div>
-      {/* First Tow */}
+      {/* First Row */}
       <div className="MainCard">
         <div className="ManagementCard">
           <div className="GovImg">
             <img src={G1} className="card-img-top" alt="Officer" />
           </div>
           <div className="card-body">
-            <h5> Shri Rajesh Kulkarni</h5>
-            <p className="Managementcard-text">Government Officer</p>
+            <h5>{t("managementPage.cards.0.name")}</h5>
+            <p className="Managementcard-text">
+              {t("managementPage.cards.0.designation")}
+            </p>
           </div>
         </div>
         <div className="Details">
-          <p>
-            “We sincerely thank our management for their constant support and
-            guidance in running the library smoothly. Their valuable
-            contribution and commitment play a vital role in creating a
-            welcoming space for readers and learners.”
-          </p>
+          <p>{t("managementPage.cards.0.description")}</p>
         </div>
       </div>
-      {/* Second Row  */}
+
+      {/* Second Row */}
       <div className="SecondRow">
         <div className="MainCard">
           <div className="ManagementCard">
@@ -34,13 +35,16 @@ function ImageCards() {
               <img src={G2} className="card-img-top" alt="Officer" />
             </div>
             <div className="card-body">
-              <h5> Smt. Meenakshi Sen</h5>
-              <p className="Managementcard-text">Chief Librarian</p>
+              <h5>{t("managementPage.cards.1.name")}</h5>
+              <p className="Managementcard-text">
+                {t("managementPage.cards.1.designation")}
+              </p>
             </div>
           </div>
         </div>
       </div>
-      {/* Third */}
+
+      {/* Third Row */}
       <div className="ThirdRow">
         <SubImageCards />
       </div>
