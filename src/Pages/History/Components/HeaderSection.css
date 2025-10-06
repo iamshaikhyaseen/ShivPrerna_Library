@@ -1,3 +1,4 @@
+/* Main layout of the header section */
 .HeaderSection {
   display: flex;
   flex-direction: column;
@@ -5,25 +6,28 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+  margin-top: -5%;
 }
 
+/* Header title spacing */
 .HeaderSection h1 {
   margin-top: 3.9%;
-} 
+}
 
-.HeaderSection p{
+/* Description width */
+.HeaderSection p {
   width: 55%;
 }
 
-.HeaderSection h6{
+/* Subtitle style */
+.HeaderSection h6 {
   text-transform: uppercase;
 }
 
-/* Responsive styles for Mobile screens < 600px */
-
+/* Responsive styles for mobile */
 @media (max-width: 600px) {
   .HeaderSection h1 {
-    margin-top: 16%;
+    margin-top: 5% !important;
   }
 
   .HeaderSection p {

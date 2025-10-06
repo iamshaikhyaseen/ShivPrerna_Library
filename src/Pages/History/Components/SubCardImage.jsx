@@ -1,43 +1,37 @@
 import "./SubCardImage.css";
 import Vision from "../../../assets/GovOfficer.png";
-import Guest from "../../../assets/LibraryMember.png";
+import Guest from "../../../assets/History/Guest.png";
+import { useTranslation } from "react-i18next";
 
 function SubCardImage() {
+  const { t } = useTranslation();
+
+  // Define cards with specific images
+  const cards = [
+    { id: 1, img: Vision },
+    { id: 2, img: Guest },
+  ];
+
   return (
     <div className="SubCardImageContain">
-      <div className="CardImage1">
-        <div className="card">
-          <img src={Vision} className="cardimg card-img-top" alt="Vision" />
-          <div className="card-body">
-            <h4>Prof. Dr. Biswaroop Mehera</h4>
-            <h6>Pro Vice-Chancellor <br />"Visionary" </h6>
-            <p className="card-text">
-              "We gratefully acknowledge the vision and dedication of Prof. Dr.
-              Biswaroop Mehera, whose unwavering support and contribution laid
-              the foundation of our library. His belief in knowledge as a
-              guiding light continues to inspire and nurture generations of
-              learners."
-            </p>
+      {cards.map((card) => (
+        <div key={card.id} className="CardImage1">
+          <div className="Historycard">
+            <img
+              src={card.img}
+              className="cardimg card-img-top"
+              alt={t(`historyPage.cards.${card.id}.header`)}
+            />
+            <div className="Historycard-body">
+              <h4>{t(`historyPage.cards.${card.id}.header`)}</h4>
+              <h6>{t(`historyPage.cards.${card.id}.subHeader`)}</h6>
+              <p className="Historycard-text">
+                {t(`historyPage.cards.${card.id}.description`)}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="CardImage1">
-        <div className="card">
-          <img src={Vision} className="cardimg card-img-top" alt="Vision" />
-          <div className="card-body">
-            <h4>Prof. Shireesh Kedare</h4>
-            <h6> Director of IIT Bombay <br />"Guest"</h6>
-            <p className="card-text">
-              "We are deeply grateful to our esteemed Chief Guest, whose
-              generous contribution and unwavering support played a
-              pivotal role in establishing this library. Their vision and
-              commitment have laid the foundation for a space that will nurture
-              knowledge, learning, and growth for generations to come."
-            </p>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

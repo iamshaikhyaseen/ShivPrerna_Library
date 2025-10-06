@@ -1,0 +1,150 @@
+.Contain {
+  margin-left: 6%;
+  width: 90%;
+}
+
+.Event1,
+.Event2,
+.Event3,
+.Event4 {
+  display: flex;
+  flex-direction: row;
+  background-color: #f0dfcd;
+  padding: 0.5%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  height: auto;
+}
+
+.Event1 {
+  margin-right: 36%;
+}
+
+.Event2,
+.Event4 {
+  margin-top: 2%;
+  margin-left: 36%;
+}
+
+.Event3 {
+  margin-right: 36%;
+  margin-top: 2%;
+}
+
+.Event1:hover,
+.Event2:hover,
+.Event3:hover,
+.Event4:hover {
+  box-shadow: 8px 8px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.Desc p,
+.Desc2 p {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+}
+
+.TextBold {
+  font-weight: bold;
+}
+
+.EventsCarousel {
+  position: relative;
+  width: 4500px !important;
+  margin-top: 1%;
+}
+
+.Carousel .carousel-inner {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.EventsCarousel .carousel-item {
+  height: 300px !important;
+}
+
+.Carousel .carousel-item img,
+.Carousel .carousel-item .d-block.w-100 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.Event3 .EventsCarousel,
+.Event4 .EventsCarousel {
+  width: 90%;
+  max-width: 500px;
+}
+
+.Event1 .EventsCarousel {
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .Contain {
+    margin-left: 3%;
+    width: 94%;
+  }
+
+  .Event1,
+  .Event2,
+  .Event3,
+  .Event4 {
+    flex-direction: column;
+    width: 84%;
+    margin: -3% 0 8% 8%;
+    padding: 4%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .Event1 .EventsCarousel,
+  .Event2 .EventsCarousel,
+  .Event3 .EventsCarousel,
+  .Event4 .EventsCarousel {
+    order: 1;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .Event1 .Desc,
+  .Event1 .Desc2,
+  .Event2 .Desc,
+  .Event2 .Desc2,
+  .Event3 .Desc,
+  .Event3 .Desc2,
+  .Event4 .Desc,
+  .Event4 .Desc2 {
+    order: 2;
+  }
+
+  .Desc p,
+  .Desc2 p {
+    margin: 2% 4%;
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .EventsCarousel {
+    margin-top: 4%;
+  }
+
+  .EventsCarousel .carousel-inner {
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+  }
+
+  .EventsCarousel .carousel-item img,
+  .EventsCarousel .carousel-item .d-block.w-100 {
+    border-radius: 12px;
+  }
+}

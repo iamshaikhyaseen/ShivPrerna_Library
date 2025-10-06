@@ -1,0 +1,71 @@
+.LandingPage1 {
+  height: 115vh;
+  width: 100%;
+  background: url("../../assets/MainImage5.png") no-repeat center center/cover;
+  color: white;
+}
+
+.LandingPage1 nav {
+  z-index: 2;
+}
+
+.LandingPage1Mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fcf0e2;
+  gap: 5%;
+}
+
+.LandingPage1Law {
+  margin-top: 22%;
+  margin-left: -20%;
+  margin-bottom: 2%;
+}
+
+.LandingPage1Carousel {
+  margin-top: -1%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+}
+
+.LandingPageEnrollBtn {
+  margin-left: 14.5%;
+  margin-top: 0.5%;
+}
+
+.LandingPage1Books{
+    background-color: #fcf0e2 !important;
+
+}
+
+@media (max-width: 480px) {
+  .LandingPage1 {
+    height: 60vh;
+    background: #fcf0e2;
+    background-image: none;
+  }
+
+  .LandingPageEnrollBtn {
+    margin-left: 12.5%;
+    margin-top: 0.5%;
+  }
+
+  .LandingPage1Mid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .LandingPage1Law {
+    margin-top: -18%;
+    margin-left: 0%;
+  }
+
+  .LandingPage1Carousel {
+    margin-top: -8%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+  }
+}

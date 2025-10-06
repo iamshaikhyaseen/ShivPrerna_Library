@@ -1,0 +1,141 @@
+/* Navbar container styling */
+.navbar {
+  background-color: #fefff9 !important;
+  color: #282834;
+  height: 8vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+/* Logo image styling */
+.LogoImg {
+  height: 10%;
+  width: 10%;
+  margin-bottom: -3% !important;
+  margin-top: -2% !important;
+}
+
+/* Container for navbar content */
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Hamburger icon for mobile menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Center links for desktop view */
+.links-centre {
+  margin-right: 16%;
+  margin-left: -16%;
+  display: flex;
+  align-items: center;
+}
+
+/* Individual nav links */
+.nav-links {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 100%;
+  margin-right: 2%;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Home link styling */
+.home {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hover effect for links */
+.nav-links:hover,
+.home:hover {
+  color: #a63e31;
+  text-shadow: #333;
+  font-weight: bolder;
+}
+
+/* Active link styling */
+.active-link {
+  font-weight: bold;
+  color: #a63e31;
+  border: 1px solid #a63e31;
+  border-radius: 1000px;
+}
+
+/* Responsive styles for screens below 1300px */
+@media (max-width: 1300px) {
+  .LogoImg {
+    max-height: 5vh;
+    width: auto;
+    margin: 0;
+    flex-shrink: 1;
+    margin-top: -4%;
+  }
+
+  .container-fluid {
+    max-height: 2vh;
+    margin-bottom: 6%;
+  }
+
+  .hamburger,
+  .link-lang,
+  .dropdown {
+    flex-shrink: 0;
+  }
+
+  .links-centre {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fcf0e2;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .links-centre.active {
+    display: flex;
+  }
+
+  .nav-links {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .active-link {
+    font-weight: bold;
+    color: #a63e31;
+    border-bottom: none;
+    background-color: #ffe5d1;
+  }
+
+  .hamburger {
+    display: block;
+    margin: 0;
+  }
+
+  .link-lang,
+  .dropdown {
+    font-size: 0.75rem;
+    padding: 1px 4px;
+  }
+}

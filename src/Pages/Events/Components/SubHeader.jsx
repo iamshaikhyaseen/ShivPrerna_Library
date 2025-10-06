@@ -1,17 +1,19 @@
 import "./SubHeader.css";
+import { useTranslation } from "react-i18next";
 
 function SubHeader() {
+  const { t } = useTranslation();
+
   return (
     <div className="SubHeader">
       <div className="title">
-        <h1>Stay Updated With Our Events!</h1>
+        <h1>{t("eventsPage.subHeader.header")}</h1>
       </div>
       <div className="SubTitle">
         <h6>
-          Don't miss out on exciting library programs, reading circles, and
-          cultural events. <br />
-          Join our <span className="highlight">WhatsApp Community</span> today and be the first to know about
-          upcoming events, reminders, and exclusive updates.
+          {t("eventsPage.subHeader.subHeader")}
+          <br />
+          {t("eventsPage.subHeader.description")}
         </h6>
       </div>
     </div>

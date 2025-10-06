@@ -1,10 +1,23 @@
-import "./HeaderSection.css"; 
+import "./HeaderSection.css";
+import { useTranslation } from "react-i18next";
 
 function HeaderSection() {
+  const { t } = useTranslation();
+
   return (
     <div className="HeaderSection">
-      <h1>Managing Resources <br/> Empowering Readers</h1>
-      <p>Unlock a world of books, knowledge, and endless learning opportunities.</p>
+      {/* Split with line break if translation contains \n */}
+      <h1>
+        {t("managementPage.headerSection.header")
+          .split("\n")
+          .map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+            </span>
+          ))}
+      </h1>
+      <p>{t("managementPage.headerSection.description")}</p>
     </div>
   );
 }

@@ -1,39 +1,51 @@
-.SubCardImageContain{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.SubCardImageContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.card-text{
-    height: 8.5rem;      /* fixed height */
-  overflow: hidden;
+.Historycard-text {
+  height: 8.5rem;
   padding: 1%;
+}
+
+.Historycard {
+  width: 25rem;
+  height: 40rem;
+  box-shadow: 0px 1px 5px #040403;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 2%;
+  border-radius: 20px;
 }
 
 /* Responsive for mobile screens */
 @media screen and (max-width: 600px) {
-    .SubCardImageContain{
+  .SubCardImageContain {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+  }
 
-  .card {
+  .Historycard {
     margin-top: 1%;
-    width: 50%;       /* shrink width */
-    height: 25rem;    /* reduce height */
+    width: 60%; 
+    height: 26rem; 
   }
 
-  .card-body {
-    font-size: 0.6rem;   /* smaller text */
-    overflow-y: auto;     /* ensure text scrolls if still long */
+  .Historycard-body {
+    font-size: 0.4rem; 
+    overflow-y: auto;
   }
-  .card-body h4 {
+  .Historycard-body h4 {
     font-size: 1rem;
+    text-decoration: underline;
   }
-  .card-body h6 {
+  .Historycard-body h6 {
     font-size: 0.7rem;
   }
-  
+  p {
+    font-size: 0.7rem !important;
+  }
 }
-  

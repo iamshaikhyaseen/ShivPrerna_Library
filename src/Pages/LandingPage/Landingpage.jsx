@@ -19,7 +19,7 @@ function Landingpage() {
         </div>
       </div>
 
-      {/* Library image and Dr. S. R. Ranganathan Image */}
+     
       <div className="bgi2">
         <div className="book-wrapper">
           <Carousel />

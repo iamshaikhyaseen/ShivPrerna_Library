@@ -1,4 +1,4 @@
-.card {
+.ManagementCard {
   max-width: 15%;
 }
 
@@ -9,12 +9,17 @@
   align-items: center;
 }
 
-.MainCard .card {
+.MainCard .ManagementCard {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+.card-body {
+  padding: 0.5rem 0.75rem !important;
+  height: -50px !important;  
 }
 
 .card-body {
@@ -50,7 +55,7 @@
 }
 
 @media (max-width: 600px) {
-  .card {
+  .ManagementCard {
     max-width: 40%;
   }
 

@@ -1,14 +1,13 @@
 import "./HeaderSection.css";
+import { useTranslation } from "react-i18next";
 
 function HeaderSection() {
+  const { t } = useTranslation();
+
   return (
     <div className="HeaderSection">
-      <h1>Rare Books</h1>
-      <p>
-        Discover timeless treasures from our collection of rare books —
-        preserved editions that hold historical, cultural, and literary
-        significance
-      </p>
+      <h1>{t("rareBooksPage.title")}</h1>
+      <p>{t("rareBooksPage.description")}</p>
     </div>
   );
 }

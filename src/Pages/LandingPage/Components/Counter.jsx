@@ -13,21 +13,21 @@ export default function Counter() {
     <div ref={ref} className="stats-container">
       <div className="stat-box">
         <h2>
-          {inView && <CountUp start={0} end={7000} duration={2.5} />}+
+          {inView && <CountUp start={0} end={7000} duration={5} />}+
         </h2>
         <p>Books</p>
       </div>
 
       <div className="stat-box">
         <h2>
-          {inView && <CountUp start={0} end={3} duration={2.5} />}+
+          {inView && <CountUp start={0} end={3} duration={5} />}+
         </h2>
         <p>Years of Trust</p>
       </div>
 
       <div className="stat-box">
         <h2>
-          {inView && <CountUp start={0} end={1000} duration={2.5} />}+
+          {inView && <CountUp start={0} end={1000} duration={5} />}+
         </h2>
         <p>Readers</p>
       </div>

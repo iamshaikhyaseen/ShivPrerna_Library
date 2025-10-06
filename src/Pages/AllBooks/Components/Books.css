@@ -1,0 +1,92 @@
+/* Page background and center content */
+.allbooks-container {
+  background-color: #fcf0e2;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Search input and category select */
+.books-search,
+.books-select {
+  width: 50%;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Table container with fixed height */
+.table-container {
+  width: 90%;
+  max-height: 400px;
+  overflow-y: auto; /* vertical scroll only */
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Table styling - default Bootstrap colors */
+.books-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: #343a40;
+}
+
+/* Sticky header */
+.books-table th {
+  position: sticky;
+  top: 0;
+  background-color: #343a40; /* dark header */
+  color: white;
+  z-index: 1;
+}
+
+/* Optional: hover effect */
+.books-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  /* Reduce search and select width */
+  .books-search,
+  .books-select {
+    width: 90%;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  /* Reduce table font size */
+  .books-table th,
+  .books-table td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  /* Adjust table container for smaller screen */
+  .table-container {
+    width: 100%;
+    max-height: 300px; /* smaller max-height for mobile */
+  }
+
+  /* Make table scrollable only vertically */
+  .books-table {
+    display: table;
+    table-layout: fixed; /* keeps columns from overflowing */
+    word-wrap: break-word;
+  }
+
+  /* Fix dropdown menu width and overflow */
+  .books-select {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .books-select option {
+    white-space: normal; /* wrap long text inside dropdown */
+  }
+}

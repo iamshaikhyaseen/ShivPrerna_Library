@@ -1,15 +1,13 @@
 import "./HeaderSection.css";
+import { useTranslation } from "react-i18next";
 
 function HeaderSection() {
+  const { t } = useTranslation();
+
   return (
     <div className="HeaderSection">
-      <h1>Enroll Now</h1>
-      <p>
-        Enroll now to become a valued member of our library and gain access to a
-        vast collection of books, digital resources, and learning programs.
-        Unlock knowledge, expand your horizons, and be part of a community that
-        inspires lifelong learning.
-      </p>
+      <h1>{t("enrollNowPage.headerSection.header")}</h1>
+      <p>{t("enrollNowPage.headerSection.description")}</p>
     </div>
   );
 }

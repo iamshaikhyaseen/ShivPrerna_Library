@@ -1,0 +1,214 @@
+/* ================= Footer Container ================= */
+.footer {
+  background: #fce8d4;
+  border-radius: 20px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 1px 0;
+  z-index: 1000;
+  position: relative;
+}
+
+/* ================= Logo Styles ================= */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.FootLogoImg {
+  margin-top: 0.1%;
+  margin-bottom: -1.5%;
+  height: 8%;
+  width: 8%;
+}
+
+/* ================= Admin Button ================= */
+.admin-btn {
+  background: #db8351;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-self: center;
+  transition: background-color 1s ease;
+}
+
+.admin-btn:hover {
+  background: #ab4026;
+  color: white;
+}
+
+/* ================= Sub Footer Section ================= */
+.subfoot {
+  position: relative;
+  left: 1%;
+}
+
+/* ================= Footer Details Layout ================= */
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 15px;
+  padding: 0 20px;
+  flex-wrap: nowrap;
+}
+
+/* ================= Contact & Address Wrapper ================= */
+.contact-address {
+  display: flex;
+  gap: 33%;
+  align-items: flex-start;
+}
+
+/* ================= Contact Section ================= */
+.contact p {
+  width: 150%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  white-space: normal;
+  margin-left: -25%;
+}
+
+/* ================= Address Section ================= */
+.address p {
+  width: 150%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  white-space: normal;
+  margin-left: -25%;
+  margin-bottom: 10%;
+}
+
+/* ================= Common Column Styles ================= */
+.contact,
+.address,
+.join-us {
+  flex: 0 0 30%;
+  min-width: 180px;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+/* ================= Company Info Text ================= */
+.comp {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 1%;
+}
+
+.comp:hover {
+  font-weight: bold;
+  color: #333;
+}
+
+/* ================= Footer Links ================= */
+.link {
+  text-decoration: none;
+  color: #333;
+}
+
+.link:hover {
+  color: brown;
+  font-weight: 1%;
+}
+
+/* ================= Responsive: Mobile (max-width: 600px) ================= */
+@media (max-width: 600px) {
+  .footer {
+    border-radius: 0;
+    padding: 6px 0;
+    gap: 4px;
+    font-size: 0.85rem;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .contact-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .contact,
+  .address {
+    flex: 1;
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 0;
+    min-width: 0;
+    margin-left: 5%;
+  }
+
+  .address p {
+    width: 90%;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin-left: 5%;
+  }
+
+  .contact p {
+    width: 155%;
+  }
+
+  .join-us {
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -2%;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .admin-btn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .comp {
+    font-size: 0.75rem;
+    margin-top: 0;
+  }
+
+  .LogoImg {
+    margin-top: 0.1%;
+    margin-bottom: -1.5%;
+    height: 12%;
+    width: 12%;
+  }
+}

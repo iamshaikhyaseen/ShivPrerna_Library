@@ -1,9 +1,9 @@
 import "./EnrollNow.css";
-import Navbar from "../Management/Components/Navbar.jsx";
+import Navbar from "../LandingPage1/Components/Navbar.jsx";
 import HeaderSection from "./Components/HeaderSection.jsx";
 import Join from "./Components/Join.jsx";
 import Review from "./Components/Review.jsx";
-import Footer from "../LandingPage/Components/Footer.jsx";
+import Footer from "../LandingPage1/Components/Footer.jsx";
 
 function EnrollNow() {
   return (
