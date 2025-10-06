@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import booksData from "../../../BooksData.js";
 import { useTranslation } from "react-i18next";
+import { api } from "../../../axiosConfig.js";
 import "./Books.css";
 
 function Books() {
   const { t } = useTranslation();
   const location = useLocation();
 
-  const [books, setBooks] = useState(booksData);
+  const [books, setBooks] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   const categories = [
     "NOVEL ( कादंबरी )",
@@ -27,7 +29,31 @@ function Books() {
     "RECIPE ( रेसिपी )",
   ];
 
-  // 👇 Detect category from URL
+  useEffect(()=>{
+    const fetchBooks=async ()=>{
+      try{
+        setLoading(true);
+        const response=await api.get("/books/allBooks");
+        console.log(response.data);
+        if(Array.isArray(response.data)){
+          setBooks(response.data);
+        }else{
+          console.warn("Data structure",response.data);
+          setBooks([]);
+        }
+      }
+      catch(err){
+        console.error("Error fetching books",err);
+        setError("Failed to fetch books. Please try again later.");
+        setBooks([]);
+      }
+      finally{
+        setLoading(false);
+      }
+    };
+    fetchBooks();
+  },[]);
+
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const category = params.get("category");
@@ -68,6 +94,11 @@ function Books() {
       </select>
 
       <div className="table-container">
+        {loading ? (
+          <p className="text-center mt-3">Loading books...</p>
+        ) : error ? (
+          <p className="text-center text-danger mt-3">{error}</p>
+        ) : (
         <table className="books-table table table-striped table-hover">
           <thead>
             <tr>
@@ -96,6 +127,7 @@ function Books() {
             )}
           </tbody>
         </table>
+        )}
       </div>
     </div>
   );

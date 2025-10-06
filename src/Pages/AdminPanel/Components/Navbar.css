@@ -1,14 +1,47 @@
+/* Navbar container styling */
 .Navbar {
-  height: 60px;
-  width: 100%;
-  background-color: #ffefdf;
-  position: fixed;
-  box-shadow: 0 8px 16px rgba(0, 0.2, 0.2, 0.2);
-  z-index: 1000;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffefdf;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.Navbar h5{
-  margin-top: 1%;
+/* Navbar title in center */
+.navbar-title {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Left and right section alignment */
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Common button styling */
+.nav-btn {
+  background-color: #ffffff;
+  color: #002b5b;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Home button hover styling */
+.home-btn:hover {
+  background-color: #cce0ff;
+}
+
+/* Logout button hover styling */
+.logout-btn:hover {
+  background-color: #ffcccc;
 }

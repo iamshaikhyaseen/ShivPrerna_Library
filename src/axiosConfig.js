@@ -9,14 +9,15 @@ const api=axios.create({
     },
 });
 
-const privateApi=(username, password)=>{
-    return axios.create({
+
+    const token=sessionStorage.getItem("auth");
+    const privateApi= axios.create({
         baseURL:BASE_URL+"/admin",
         headers:{
             "Content-Type":"application/json",
-            "Authorization":"Basic "+btoa(`${username}:${password}`),
+            "Authorization":`Basic ${token}`,
         },
     });
-};
+
 
 export {api,privateApi};

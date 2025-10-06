@@ -1,28 +1,49 @@
-.ManageDetailsContain{
-    margin-bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Container for the Manage Details section */
+.ManageDetailsContain {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.ManageDetails{
-    margin-top: 6.5%;
-    text-align: center;
-    padding: 5%;
-    background-color: #ffefdf;
-    border-radius: 40px;
-    margin-bottom: 1%;
-    box-shadow: 0 3px 16px 6px rgba(0, 0.2, 0.2, 0.2);
+/* Inner Manage Details card styling */
+.ManageDetails {
+  margin-top: 6.5%;
+  text-align: center;
+  padding: 5%;
+  background-color: #ffefdf;
+  border-radius: 40px;
+  margin-bottom: 1%;
+  box-shadow: 0 3px 16px 6px rgba(0, 0.2, 0.2, 0.2);
 }
 
-.ManageDetailsContainbtn{
-background-color: rgb(4, 107, 4) !important;
-box-shadow: 0 3px 16px 6px rgba(0, 0.2, 0.2, 0.2);
-}
-.ManageDetails h4{
-    font-weight: bolder;
+/* Button styling (if used) */
+.ManageDetailsContainbtn {
+  background-color: rgb(4, 107, 4) !important;
+  box-shadow: 0 3px 16px 6px rgba(0, 0.2, 0.2, 0.2);
 }
 
-.ManageDetails p{
-    font-weight: bold;
+/* Heading styling */
+.ManageDetails h4 {
+  font-weight: bolder;
+}
+
+/* Paragraph text styling */
+.ManageDetails p {
+  font-weight: bold;
+}
+
+/* Clickable link styling for Books and Members */
+.manage-link {
+  cursor: pointer;
+  color: #a63e31;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for clickable links */
+.manage-link:hover {
+  color: #a63e31;
+  text-decoration: underline;
+  transform: scale(1.05);
 }
