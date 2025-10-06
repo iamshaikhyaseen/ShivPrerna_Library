@@ -1,21 +1,28 @@
+/* Heading section for new arrivals */
 .Headding {
   background-color: #fcf0e2;
   text-align: center;
 }
 
+.Headding h1 {
+  padding-top: 1%;
+}
+
+/* Container for all book cards */
 .container {
   display: flex;
   justify-content: space-evenly;
-  align-items: stretch; /* cards align in height */
+  align-items: stretch;
   gap: 20px;
   padding: 0 10px;
-  flex-wrap: wrap; /* allow wrapping */
+  flex-wrap: wrap;
 }
 
+/* Individual book card styling */
 .Bookcard {
-  flex: 1 1 30%; /* 3 cards per row */
+  flex: 1 1 30%;
   max-width: 30%;
-  min-width: 260px; /* prevent shrinking too much */
+  min-width: 260px;
   background-color: #fcf9f2 !important;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
   display: flex;
@@ -24,55 +31,53 @@
   text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
-  height: 50% !important;
 }
 
+/* Book image styling */
+.img {
+  width: 200px;
+  height: 280px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+/* Card body content */
 .Bookcard-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50% !important;
+  padding: 10px;
 }
 
-.img {
-  width: 100%; /* make image scale with card */
-  max-width: 280px; /* optional cap */
-  border-radius: 40px !important;
-  padding: 2% !important;
-  margin-top: 1%;
-  background-color: #fcf9f2 !important;
-}
 .Bookcard-text {
   padding: 4%;
 }
 
+/* Button reset */
 .btn {
   margin: 0 !important;
 }
 
-/* Mobile Responsive (≤600px) */
+/* Mobile responsive adjustments */
 @media (max-width: 600px) {
   .container {
     justify-content: center;
     gap: 10px;
-    padding: 0 5px 3rem; /* fixed padding */
+    padding: 0 5px 3rem;
   }
 
   .Bookcard {
-    flex: 1 1 90%; /* full width card */
-    max-width: 60%;
+    flex: 1 1 90%;
+    max-width: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .img {
-    max-width: 80%;
-    height: 50% !important;
-    padding: 1%;
+    width: 160px;
+    height: 220px;
   }
-  .Bookcard-body {
-    height: auto !important;
-  }
+
   .Bookcard-body h3 {
     font-size: 1rem;
   }

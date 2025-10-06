@@ -1,4 +1,4 @@
-/* Categories.css */
+/* Container for all categories */
 .categories-container {
   background: #fcf9f2;
   border-radius: 40px;
@@ -9,6 +9,7 @@
   border: 0.1px solid black;
 }
 
+/* Heading of the categories section */
 .categories-heading {
   font-size: 1.5em;
   margin-bottom: 15px;
@@ -17,54 +18,57 @@
   letter-spacing: 0.1px;
 }
 
+/* List containing category items */
 .categories-list {
   list-style: none;
   padding: 0;
   margin: 10%;
 }
 
+/* Individual category item container */
 .category-item {
   margin-bottom: 5px;
 }
 
+/* Clickable link inside category item */
 .category-link {
   text-decoration: none;
-  /* color:  #a63e31; */
   color: #333;
-  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 1.05em;
-  display: block; /* Ensures each link is on its own line */
+  display: block; /* Each link occupies full line */
   padding: 3px 0;
   transition: color 0.2s;
 }
 
+/* Hover effect for category links */
 .category-link:hover {
   color: #a63e31;
   text-shadow: #333;
   font-weight: bolder;
 }
 
+/* Responsive styles for mobile */
 @media (max-width: 600px) {
   .categories-container {
-    width: 40%; /* full width with some margin */
-    margin-left: 5%; /* center the container */
-    padding: 15px 20px; /* smaller padding for mobile */
-    margin-top: 5%; /* adjust top spacing */
-    border-radius: 20px; /* slightly smaller corners */
+    width: 40%;
+    margin-left: 5%;
+    padding: 15px 20px;
+    margin-top: 5%;
+    border-radius: 20px;
   }
 
   .categories-heading {
-    font-size: 1.2em; /* smaller heading */
-    text-align: center; /* optional: center heading */
+    font-size: 1.2em;
+    text-align: center;
     margin-bottom: 10px;
   }
 
   .categories-list {
-    margin: 5%; /* reduce list margin */
+    margin: 5%;
   }
 
   .category-link {
-    font-size: 1em; /* slightly smaller text */
+    font-size: 1em;
     padding: 2px 0;
   }
 }

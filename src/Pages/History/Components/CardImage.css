@@ -1,8 +1,10 @@
+/* Layout container */
 .MainCardImage {
   display: flex;
   flex-direction: column;
 }
 
+/* Centers the card */
 .CardImage1 {
   display: flex;
   justify-content: center;
@@ -11,6 +13,7 @@
   width: 100%;
 }
 
+/* Card styling */
 .Historycard {
   width: 25rem;
   height: 40rem;
@@ -24,12 +27,14 @@
   max-height: 550px !important;
 }
 
+/* Image styling */
 .cardimg {
   width: 80%;
   height: 55%;
   padding: 0;
 }
 
+/* Text container inside the card */
 .Historycard-body {
   flex: 1;
   display: flex;
@@ -40,19 +45,7 @@
   font-size: 0.9rem;
 }
 
-.card-body h4 {
-  margin-bottom: 0.5rem;
-}
-
-.card-body h6 {
-  margin-bottom: 0.25rem !important;
-}
-
-.card-body p {
-  margin-top: 0.25rem !important;
-}
-
-/* Responsive for mobile screens */
+/* Responsive styles for mobile */
 @media screen and (max-width: 600px) {
   .Historycard {
     width: 50%;
@@ -61,16 +54,16 @@
     max-height: 550px !important;
   }
 
-  .card-body {
+  .Historycard-body {
     font-size: 0.6rem;
     overflow-y: auto;
   }
 
-  .card-body h4 {
+  .Historycard-body h4 {
     font-size: 1rem;
   }
 
-  .card-body h6 {
+  .Historycard-body h6 {
     font-size: 0.7rem;
   }
 }

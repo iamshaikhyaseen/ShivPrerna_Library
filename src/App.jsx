@@ -7,13 +7,15 @@ import Events from "./Pages/Events/Events.jsx";
 import Management from "./Pages/Management/Management.jsx";
 import EnrollNow from "./Pages/EnrollNow/EnrollNow.jsx";
 import AdminLogin from "./Pages/AdminLogin/AdminLogin.jsx";
+import SubNav from "./Pages/LandingPage1/Components/SubNav.jsx";
+import Books from "./Pages/AllBooks/AllBooks.jsx";
 
 function App() {
-
   return (
     // <Router>
     <div>
       <Routes>
+        <Route path="/all_books" element={<Books />} />
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History />} />
         <Route path="/all_books" element={<AllBooks />} />

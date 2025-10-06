@@ -1,14 +1,15 @@
 import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // hamburger and close icons
+import { Menu, X } from "lucide-react"; // Hamburger and close icons
 import Logo from "../../../assets/Lib_Logo_Main.png";
 import { useTranslation } from "react-i18next";
 
 function MainNav() {
-  const [isOpen, setIsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false); // State to track mobile menu open/close
+  const { t, i18n } = useTranslation(); // Translation hook
 
+  // Handle language change
   const handleLanguageChange = (e) => {
     i18n.changeLanguage(e.target.value);
   };
@@ -17,6 +18,8 @@ function MainNav() {
     <div className="bgi">
       <nav className="navbar">
         <div className="container-fluid">
+
+          {/* Logo and Home Link */}
           <div className="navbar-brand">
             <Link className="home" to="/">
               <img
@@ -28,12 +31,12 @@ function MainNav() {
             </Link>
           </div>
 
-          {/* Hamburger Button */}
+          {/* Hamburger Button for Mobile */}
           <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </div>
 
-          {/* Links */}
+          {/* Navigation Links */}
           <div className={`links-centre ${isOpen ? "active" : ""}`}>
             <NavLink
               to="/history"
@@ -101,6 +104,7 @@ function MainNav() {
               </option>
             </select>
           </div>
+
         </div>
       </nav>
     </div>

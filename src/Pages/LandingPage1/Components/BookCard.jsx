@@ -1,15 +1,18 @@
-import b1 from "../../../assets/bgMain1.jpg";
+import Mockingbird from "../../../assets/bgMain1.jpg";
+import Book1984 from "../../../assets/Book-1984.png";
+import PrideAndPrejudice from "../../../assets/Book-P&P.png";
+
 import "./BookCard.css";
 import { useTranslation } from "react-i18next";
 
 function BookCard() {
   const { t } = useTranslation();
 
-  // Book data
+  // Array of book details
   const books = [
     {
       id: 1,
-      img: b1,
+      img: Mockingbird,
       name: "To Kill a Mockingbird",
       author: "Author: Harper Lee",
       description:
@@ -17,7 +20,7 @@ function BookCard() {
     },
     {
       id: 2,
-      img: b1,
+      img: Book1984,
       name: "1984",
       author: "Author: George Orwell",
       description:
@@ -25,7 +28,7 @@ function BookCard() {
     },
     {
       id: 3,
-      img: b1,
+      img: PrideAndPrejudice,
       name: "Pride and Prejudice",
       author: "Author: Jane Austen",
       description:
@@ -35,21 +38,26 @@ function BookCard() {
 
   return (
     <div>
+      {/* Heading Section */}
       <div className="Headding">
         <h1>{t("landingPage.newArrival.title")}</h1>
       </div>
 
+      {/* Cards Container */}
       <div className="container">
         {books.map((book) => (
           <div key={book.id} className="Bookcard" style={{ width: "18rem" }}>
             <img src={book.img} className="img card-img-top" alt={book.name} />
-            <div className="card-body">
-              <h3 className="card-title">{t(`landingPage.newArrival.cards.${book.id - 1}.bookName`)}</h3>
-              <h5 className="card-title">{t(`landingPage.newArrival.cards.${book.id - 1}.author`)}</h5>
-              <p className="Bookcard-text">{t(`landingPage.newArrival.cards.${book.id - 1}.description`)}</p>
-              <button className="Bookbtn btn btn-dark">
-                {t("landingPage.newArrival.cards.0.explore")}
-              </button>
+            <div className="card-body Bookcard-body">
+              <h3 className="card-title">
+                {t(`landingPage.newArrival.cards.${book.id - 1}.bookName`)}
+              </h3>
+              <h5 className="card-title">
+                {t(`landingPage.newArrival.cards.${book.id - 1}.author`)}
+              </h5>
+              <p className="Bookcard-text">
+                {t(`landingPage.newArrival.cards.${book.id - 1}.description`)}
+              </p>
             </div>
           </div>
         ))}

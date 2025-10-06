@@ -22,6 +22,10 @@
   margin-top: -2.9%;
 }
 
+.details2{
+  margin-right: -20%;
+}
+
 .details1,
 .details2 {
   width: 105%; /* make same width as image */
@@ -71,7 +75,7 @@
   }
 
 
-  .Eimg {
+  .Eimg1 {
     width: 100%;
     display: flex;
     justify-content: center;

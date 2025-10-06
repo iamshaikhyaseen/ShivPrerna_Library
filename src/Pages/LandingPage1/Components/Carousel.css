@@ -1,14 +1,16 @@
+/* Container for landing page carousel */
 .LandingPageCarousel {
-  width: 600px !important; /* restrict max width */
+  width: 600px !important;
   height: 300px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  margin: 0 auto; /* center carousel inside page */
+  margin: 0 auto;
   flex-shrink: 0;
   margin-left: 10%;
 }
 
+/* Carousel structure */
 .carousel,
 .carousel-inner,
 .carousel-item {
@@ -16,6 +18,7 @@
   height: 100%;
 }
 
+/* Carousel images */
 .carousel-img,
 .carousel-item img {
   width: 100%;
@@ -25,10 +28,12 @@
   border-radius: 20px;
 }
 
+/* Indicator buttons */
 .btn {
   color: black;
 }
 
+/* Responsive styling for mobile */
 @media (max-width: 600px) {
   .LandingPageCarousel {
     width: 90vw !important;

@@ -1,26 +1,13 @@
-import { api } from '../../apiConfig';
-import './AllBooks.css'
-import React, { useEffect, useState } from 'react'
+import Books from "./Components/Books.jsx";
+import Navbar from "../LandingPage1/Components/Navbar.jsx";
+import Footer from "../LandingPage1/Components/Footer";
 
 function AllBooks() {
-
-    const [books,setBooks]=useState([]);
-    // useEffect(()=>{
-    //     async function fetchBooks(params) {
-    //         const response=await api.get("/books/allBooks");
-    //         console.log(response.data);
-    //     }
-    // },[]);
-
-     const fetchBooks=async ()=>{
-        const response=await api.get("/books/allBooks");
-        console.log(response.data);
-        
-    }
-
   return (
-    <div>   
-        <button onClick={fetchBooks} >AllBooks</button>
+    <div>
+      <Navbar/>
+      <Books/>
+      <Footer/>
     </div>
   )
 }

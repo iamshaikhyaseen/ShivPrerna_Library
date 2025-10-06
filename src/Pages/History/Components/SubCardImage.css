@@ -30,12 +30,12 @@
 
   .Historycard {
     margin-top: 1%;
-    width: 60%; /* shrink width */
-    height: 26rem; /* reduce height */
+    width: 60%; 
+    height: 26rem; 
   }
 
   .Historycard-body {
-    font-size: 0.4rem; /* smaller text */
+    font-size: 0.4rem; 
     overflow-y: auto;
   }
   .Historycard-body h4 {

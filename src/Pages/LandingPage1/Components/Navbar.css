@@ -1,3 +1,4 @@
+/* Navbar container styling */
 .navbar {
   background-color: #fefff9 !important;
   color: #282834;
@@ -14,6 +15,7 @@
   flex-wrap: nowrap;
 }
 
+/* Logo image styling */
 .LogoImg {
   height: 10%;
   width: 10%;
@@ -21,6 +23,7 @@
   margin-top: -2% !important;
 }
 
+/* Container for navbar content */
 .container-fluid {
   display: flex;
   align-items: center;
@@ -28,11 +31,13 @@
   flex: 1;
 }
 
+/* Hamburger icon for mobile menu */
 .hamburger {
   display: none;
   cursor: pointer;
 }
 
+/* Center links for desktop view */
 .links-centre {
   margin-right: 16%;
   margin-left: -16%;
@@ -40,6 +45,7 @@
   align-items: center;
 }
 
+/* Individual nav links */
 .nav-links {
   padding: 0.5rem 1rem;
   text-align: center;
@@ -50,11 +56,13 @@
   transition: color 0.3s, border-bottom 0.3s;
 }
 
+/* Home link styling */
 .home {
   text-decoration: none;
   color: #333;
 }
 
+/* Hover effect for links */
 .nav-links:hover,
 .home:hover {
   color: #a63e31;
@@ -62,18 +70,15 @@
   font-weight: bolder;
 }
 
-/* Active Link Styling */
+/* Active link styling */
 .active-link {
   font-weight: bold;
-  color: #a63e31; /* Highlight color for active page */
-  border-top: 1px solid #a63e31;
-  border-bottom: 1px solid #a63e31;
-  border-left: 1px solid #a63e31;
-  border-right: 1px solid #a63e31;
+  color: #a63e31;
+  border: 1px solid #a63e31;
   border-radius: 1000px;
 }
 
-/* Responsive Styles */
+/* Responsive styles for screens below 1300px */
 @media (max-width: 1300px) {
   .LogoImg {
     max-height: 5vh;
@@ -92,11 +97,6 @@
   .link-lang,
   .dropdown {
     flex-shrink: 0;
-  }
-
-  .navbar {
-    justify-content: space-between;
-    flex-wrap: nowrap;
   }
 
   .links-centre {
@@ -121,12 +121,11 @@
     width: 100%;
   }
 
-  /* Active Link Styling for Mobile */
   .active-link {
     font-weight: bold;
     color: #a63e31;
-    border-bottom: none; /* Remove bottom border for mobile menu */
-    background-color: #ffe5d1; /* Optional: highlight background */
+    border-bottom: none;
+    background-color: #ffe5d1;
   }
 
   .hamburger {

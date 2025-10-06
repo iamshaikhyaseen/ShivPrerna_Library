@@ -1,5 +1,5 @@
 import "./Join.css";
-import img1 from "../../../assets/EnrollNow/IdCard.jpg";
+import img1 from "../../../assets/EnrollNow/IdCard.png";
 import img2 from "../../../assets/EnrollNow/BookReading.webp";
 import { useTranslation } from "react-i18next";
 
@@ -21,7 +21,7 @@ function Join() {
             ))}
           </p>
         </div>
-        <div>
+        <div className="Eimg1" >
           <img src={img1} className="Eimg img" alt="IdCard" />
         </div>
       </div>

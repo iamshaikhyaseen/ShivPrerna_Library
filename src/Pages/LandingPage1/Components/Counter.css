@@ -1,5 +1,6 @@
+/* Container for all statistic boxes */
 .stats-container {
-  background-color: #fce8d4 !important;  
+  background-color: #fce8d4 !important;
   display: flex;
   justify-content: center;
   gap: 10rem;
@@ -8,6 +9,7 @@
   text-align: center;
 }
 
+/* Individual statistic box */
 .stat-box {
   background: #fdfdfd;
   padding: 1.5rem 2rem;
@@ -16,31 +18,33 @@
   flex: 1 1 200px;
 }
 
+/* Number in the counter */
 .stat-box h2 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin: 0;
   color: #222;
 }
 
+/* Label below number */
 .stat-box p {
   margin: 0.5rem 0 0;
   font-size: 1rem;
   color: #555;
 }
 
-/* ✅ Mobile Responsive (fit all in single row) */
+/* Mobile responsive styling */
 @media (max-width: 600px) {
   .stats-container {
-    flex-wrap: nowrap;        /* one row */
-    gap: 1rem;                /* smaller spacing */
+    flex-wrap: nowrap;
+    gap: 1rem;
     padding: 1rem;
-    justify-content: space-between; /* distribute evenly */
+    justify-content: space-between;
   }
 
   .stat-box {
-    flex: 1 1 calc(33.33% - 0.66rem); /* three boxes fit in row */
-    min-width: 0;                     /* prevent overflow */
-    padding: 1rem 0.5rem;            /* reduce padding */
+    flex: 1 1 calc(33.33% - 0.66rem);
+    min-width: 0;
+    padding: 1rem 0.5rem;
   }
 
   .stat-box h2 {

@@ -59,22 +59,19 @@ i18next
                   bookName: "To Kill a Mockingbird",
                   author: "Author: Harper Lee",
                   description:
-                    "A story about justice, morality, and racial prejudice in the American South",
-                  explore: "Explore",
+                    "Set in the racially segregated American South during the 1930s, To Kill a Mockingbird tells the story of young Scout Finch, her brother Jem, and their father, Atticus Finch, a principled lawyer who defends a Black man falsely accused of a crime. Through Scout's innocent perspective, the novel explores deep themes of justice, empathy, moral courage, and the loss of childhood innocence.",
                 },
                 {
                   bookName: "1984",
                   author: "Author: George Orwell",
                   description:
-                    "A dystopian novel about surveillance, totalitarianism, and resistance",
-                  explore: "Explore",
+                    "George Orwell's 1984 is a chilling portrayal of a totalitarian society ruled by Big Brother, where every action, word, and thought is monitored. The protagonist, Winston Smith, works for the Party but secretly rebels against its oppressive control. The novel warns against the dangers of absolute power, loss of privacy, manipulation of truth, and the destruction of individuality in the name of order.",
                 },
                 {
                   bookName: "Pride and Prejudice",
                   author: "Author: Jane Austen",
                   description:
-                    "A romantic novel exploring love, class, and family in Georgian England",
-                  explore: "Explore",
+                    "A timeless masterpiece, Pride and Prejudice follows the intelligent and independent Elizabeth Bennet as she navigates issues of love, marriage, and social expectations in 19th-century England. Her evolving relationship with the proud yet honorable Mr. Darcy reveals themes of misunderstanding, self-realization, and the triumph of true affection over pride and prejudice.",
                 },
               ],
             },
@@ -142,28 +139,24 @@ i18next
               author: "Author - J.D. Salinger",
               description:
                 "Salinger, known for being strict about his book's presentation, allowed his neighbor and friend E. Michael Mitchell to design the only cover featuring an image for his most famous work. The cover has since been widely reproduced on merchandise and is a popular dorm room decoration.",
-              explore: "Explore",
             },
             book2: {
               title: "To Kill a Mockingbird",
               author: "Author - Harper Lee",
               description:
-                "A story about justice, morality, and racial prejudice in the American South.",
-              explore: "Explore",
+                "Set in the racially segregated American South during the 1930s, To Kill a Mockingbird tells the story of young Scout Finch, her brother Jem, and their father, Atticus Finch, a principled lawyer who defends a Black man falsely accused of a crime. Through Scout's innocent perspective, the novel explores deep themes of justice, empathy, moral courage, and the loss of childhood innocence.",
             },
             book3: {
               title: "1984",
               author: "Author - George Orwell",
               description:
-                "A dystopian novel about surveillance, totalitarianism, and resistance.",
-              explore: "Explore",
+                "George Orwell's 1984 is a chilling portrayal of a totalitarian society ruled by Big Brother, where every action, word, and thought is monitored. The protagonist, Winston Smith, works for the Party but secretly rebels against its oppressive control. The novel warns against the dangers of absolute power, loss of privacy, manipulation of truth, and the destruction of individuality in the name of order.",
             },
             book4: {
               title: "Pride and Prejudice",
               author: "Author - Jane Austen",
               description:
-                "A romantic novel exploring love, class, and family in Georgian England.",
-              explore: "Explore",
+                "A timeless masterpiece, Pride and Prejudice follows the intelligent and independent Elizabeth Bennet as she navigates issues of love, marriage, and social expectations in 19th-century England. Her evolving relationship with the proud yet honorable Mr. Darcy reveals themes of misunderstanding, self-realization, and the triumph of true affection over pride and prejudice.",
             },
           },
           eventsPage: {
@@ -208,7 +201,7 @@ i18next
             headerSection: {
               header: "Managing Resources\nEmpowering Readers",
               description:
-                "Unlock a world of books, knowledge, and endless learning opportunities.",
+                "Effectively managing our resources to provide readers with access, knowledge, and opportunities to grow.",
             },
             cards: [
               {
@@ -275,6 +268,17 @@ i18next
                 "Join us today and open the door to knowledge, culture, and community.",
             },
           },
+
+          AllBooks: {
+            title: "Book List",
+            category: "All Categories",
+            BookId: "Book ID",
+            BookTitle: "Book Title",
+            Author: "Author",
+            Category: "Category",
+            searchPlaceholder: "Search by book title...",
+            noBookFound: "No book found",
+          },
         },
       },
 
@@ -326,22 +330,20 @@ i18next
                 {
                   bookName: "टू किल अ मॉकिंगबर्ड",
                   author: "लेखक: हार्पर ली",
-                  description: "न्याय, नैतिकता आणि वर्णभेद यांवर आधारित एक कथा",
-                  explore: "पहा",
+                  description:
+                    "१९३० च्या दशकातील अमेरिकेच्या दक्षिण भागातील वांशिक भेदभावाच्या पार्श्वभूमीवर आधारित ही कथा स्काउट फिंच, तिचा भाऊ जेम आणि त्यांचे वडील अॅटिकस फिंच यांच्या भोवती फिरते. अॅटिकस हा एक प्रामाणिक वकील असून तो एका कृष्णवर्णीय व्यक्तीचा अन्यायकारक खटल्यात बचाव करतो. स्काउटच्या निरागस नजरेतून ही कादंबरी न्याय, सहानुभूती, नैतिक धैर्य आणि बाल्यनिर्दोषपणाच्या हरवण्याच्या विषयांवर प्रकाश टाकते.",
                 },
                 {
                   bookName: "१९८४",
                   author: "लेखक: जॉर्ज ऑर्वेल",
                   description:
-                    "नियंत्रण, अधिनायकवाद आणि प्रतिकारावर आधारित एक डायस्टोपियन कादंबरी",
-                  explore: "पहा",
+                    "जॉर्ज ऑर्वेलची १९८४ ही एक भीषण काल्पनिक कादंबरी आहे, ज्यात “बिग ब्रदर” नावाच्या सर्वसत्ताधारी सत्तेखालील समाजाचे चित्रण आहे. प्रत्येक व्यक्तीचे विचार, कृती आणि शब्द यांवर सतत देखरेख ठेवली जाते. नायक विन्स्टन स्मिथ पक्षासाठी काम करत असला तरी आतून तो या अत्याचारी नियंत्रणाविरुद्ध बंड करतो. ही कादंबरी सर्वाधिकारशाही, गोपनीयतेचा अभाव, सत्याचे विकृतीकरण आणि व्यक्तिमत्वाच्या नाशाच्या धोक्याविषयी चेतावणी देते.",
                 },
                 {
                   bookName: "प्राइड अँड प्रेजुडिस",
                   author: "लेखक: जेन ऑस्टेन",
                   description:
-                    "जॉर्जियन इंग्लंडमधील प्रेम, वर्ग आणि कुटुंब यांचा अभ्यास करणारी रोमँटिक कादंबरी",
-                  explore: "पहा",
+                    "प्राईड अँड प्रेजुडिस ही १९व्या शतकातील इंग्लंडमधील सामाजिक वास्तवावर आधारित एक शाश्वत प्रेमकथा आहे. बुद्धिमान आणि स्वावलंबी एलिझाबेथ बेनेट हिच्या जीवनातून प्रेम, विवाह आणि समाजाच्या अपेक्षा या विषयांचा शोध घेतला जातो. गर्विष्ठ पण प्रामाणिक मिस्टर डार्सी यांच्याशी तिचे बदलणारे नाते गैरसमज, आत्मओळख आणि खऱ्या प्रेमाच्या विजयाची कहाणी सांगते.",
                 },
               ],
             },
@@ -370,9 +372,9 @@ i18next
           historyPage: {
             header: {
               title: "इतिहास",
-              subHeader: "भूतकाळातील कथा भविष्याला प्रेरणा देतात",
+              subHeader: "जिथे भूतकाळाच्या कथा भविष्याला प्रेरणा देतात",
               description:
-                "आमचे वाचनालय नवीन असले तरी वाचक आणि शिकणाऱ्यांचा समुदाय वाढविण्याचे उद्दिष्ट आहे. आमच्या प्रवासाचा शोध घ्या जिथे आम्ही शोध आणि ज्ञानासाठी एक व्यासपीठ उभारत आहोत.",
+                "नवीन असूनही, आमचे वाचनालय वाचक आणि शिकणाऱ्यांचा सशक्त समुदाय घडविण्यास समर्पित आहे. शोध, ज्ञान आणि जोडणी यांचे केंद्र म्हणून आम्ही उभे करत असलेल्या या प्रवासाचा भाग व्हा.",
             },
             cards: [
               {
@@ -402,41 +404,38 @@ i18next
           rareBooksPage: {
             title: "दुर्मीळ पुस्तके",
             description:
-              "आमच्या संग्रहातील ऐतिहासिक, सांस्कृतिक आणि साहित्यिक दृष्ट्या महत्त्वपूर्ण दुर्मीळ पुस्तके येथे शोधा.",
+              "आमच्या दुर्मिळ पुस्तकांच्या संग्रहातील अमूल्य रत्न शोधा — ज्या आवृत्त्यांमध्ये ऐतिहासिक, सांस्कृतिक आणि साहित्यिक महत्त्व जपले गेले आहे.",
             book1: {
               title: "द कॅचर इन द राय",
               author: "लेखक - जे. डी. सॅलिंजर",
               description:
                 "सॅलिंजर यांनी त्यांच्या पुस्तकाच्या सादरीकरणासाठी कठोर असताना, शेजारी आणि मित्र ई. मायकेल मिशेल यांना एकमेव आवरण तयार करण्याची परवानगी दिली. ते आवरण नंतर अनेकदा वस्तूंवर पुनर्निर्मित झाले आणि विद्यार्थ्यांच्या खोलीसाठी लोकप्रिय ठरले.",
-              explore: "पहा",
             },
             book2: {
               title: "टू किल अ मॉकिंगबर्ड",
               author: "लेखक - हार्पर ली",
-              description: "न्याय, नैतिकता आणि वर्णभेद यांवर आधारित एक कथा.",
-              explore: "पहा",
+              description:
+                "१९३० च्या दशकातील अमेरिकेच्या दक्षिण भागातील वांशिक भेदभावाच्या पार्श्वभूमीवर आधारित ही कथा स्काउट फिंच, तिचा भाऊ जेम आणि त्यांचे वडील अॅटिकस फिंच यांच्या भोवती फिरते. अॅटिकस हा एक प्रामाणिक वकील असून तो एका कृष्णवर्णीय व्यक्तीचा अन्यायकारक खटल्यात बचाव करतो. स्काउटच्या निरागस नजरेतून ही कादंबरी न्याय, सहानुभूती, नैतिक धैर्य आणि बाल्यनिर्दोषपणाच्या हरवण्याच्या विषयांवर प्रकाश टाकते.",
             },
             book3: {
               title: "१९८४",
               author: "लेखक - जॉर्ज ऑर्वेल",
               description:
-                "नियंत्रण, अधिनायकवाद आणि प्रतिकारावर आधारित एक डायस्टोपियन कादंबरी.",
-              explore: "पहा",
+                "जॉर्ज ऑर्वेलची १९८४ ही एक भीषण काल्पनिक कादंबरी आहे, ज्यात “बिग ब्रदर” नावाच्या सर्वसत्ताधारी सत्तेखालील समाजाचे चित्रण आहे. प्रत्येक व्यक्तीचे विचार, कृती आणि शब्द यांवर सतत देखरेख ठेवली जाते. नायक विन्स्टन स्मिथ पक्षासाठी काम करत असला तरी आतून तो या अत्याचारी नियंत्रणाविरुद्ध बंड करतो. ही कादंबरी सर्वाधिकारशाही, गोपनीयतेचा अभाव, सत्याचे विकृतीकरण आणि व्यक्तिमत्वाच्या नाशाच्या धोक्याविषयी चेतावणी देते.",
             },
             book4: {
               title: "प्राइड अँड प्रेजुडिस",
               author: "लेखक - जेन ऑस्टेन",
               description:
-                "जॉर्जियन इंग्लंडमधील प्रेम, वर्ग आणि कुटुंब यांचा अभ्यास करणारी रोमँटिक कादंबरी.",
-              explore: "पहा",
+                "प्राईड अँड प्रेजुडिस ही १९व्या शतकातील इंग्लंडमधील सामाजिक वास्तवावर आधारित एक शाश्वत प्रेमकथा आहे. बुद्धिमान आणि स्वावलंबी एलिझाबेथ बेनेट हिच्या जीवनातून प्रेम, विवाह आणि समाजाच्या अपेक्षा या विषयांचा शोध घेतला जातो. गर्विष्ठ पण प्रामाणिक मिस्टर डार्सी यांच्याशी तिचे बदलणारे नाते गैरसमज, आत्मओळख आणि खऱ्या प्रेमाच्या विजयाची कहाणी सांगते.",
             },
           },
           eventsPage: {
             headerSection: {
               header: "कार्यक्रम",
-              subHeader: "ज्ञानाच्या भेटी आणि समुदायाचा उत्सव",
+              subHeader: "मनांची जोडणी, समुदायाचा उत्सव",
               description:
-                "ग्रंथालये ही केवळ पुस्तके साठवण्याची जागा नसून विचारांची देवाणघेवाण आणि सांस्कृतिक एकतेचे केंद्र असतात.",
+                "वाचनालयं फक्त पुस्तकांचा संग्रह नाहीत — ही अशी जिवंत जागा आहे जिथे कथा, संस्कृती आणि ज्ञानाच्या माध्यमातून मनं एकमेकांशी जोडतात, आणि जिथे समुदाय एकत्र येऊन त्यांच्या वैविध्यपूर्ण आणि एकात्मिक संस्कृतीचा उत्सव साजरा करतात.",
             },
             cards: [
               {
@@ -461,19 +460,19 @@ i18next
               },
             ],
             subHeader: {
-              header: "आमच्या कार्यक्रमांबरोबर अद्ययावत रहा!",
+              header: "आमच्या प्रत्येक कार्यक्रमाचा अनुभव घ्या!",
               subHeader:
-                "ग्रंथालयाचे रोमांचक कार्यक्रम, वाचन सत्रे आणि सांस्कृतिक उपक्रम चुकवू नका.",
+                "रोमांचक वाचनालय कार्यक्रम, वाचन मंडळे आणि सांस्कृतिक कार्यक्रमांसोबत अद्ययावत राहा. एकही उपक्रम चुकवू नका.",
               description:
-                "आजच आमच्या WhatsApp समुदायात सामील व्हा आणि येणाऱ्या कार्यक्रमांबद्दल सर्वात आधी माहिती मिळवा.",
+                "आजच आमच्या WhatsApp समुदायात सामील व्हा आणि येणाऱ्या कार्यक्रमांची, स्मरणिकांची आणि विशेष अपडेट्सची माहिती पहिल्यांपैकी मिळवा.",
             },
           },
 
           managementPage: {
             headerSection: {
-              header: "संसाधनांचे व्यवस्थापन\nवाचकांना सक्षम करणे",
+              header: "संसाधनांचे नीट व्यवस्थापन,\n वाचकांसाठी नवीन शक्ती",
               description:
-                "ज्ञान, पुस्तके आणि शिकण्याच्या अनंत संधींचे दार उघडा.",
+                "ग्रंथालय सुरळीत चालविण्यासाठी कायमस्वरूपी पाठबळ आणि मार्गदर्शन प्रदान केल्याबद्दल आम्ही आमच्या व्यवस्थापनाचे मनःपूर्वक आभार मानतो. त्यांचे मौल्यवान योगदान आणि प्रतिबद्धता वाचक आणि शिक्षार्थ्यांसाठी स्वागतार्ह वातावरण निर्माण करण्यात अत्यंत महत्त्वाची भूमिका बजावतात.",
             },
             cards: [
               {
@@ -539,6 +538,17 @@ i18next
               title:
                 "आजच सामील व्हा आणि ज्ञान, संस्कृती आणि समुदायाचे दार उघडा.",
             },
+          },
+
+          AllBooks: {
+            title: "पुस्तकांची यादी",
+            category: "सर्व श्रेण्या",
+            BookId: "पुस्तक_आयडी",
+            BookTitle: "पुस्तकाचे नाव",
+            Author: "लेखक",
+            Category: "श्रेणी",
+            searchPlaceholder: "पुस्तकाचे नाव शोधा...",
+            noBookFound: "कोणतेही पुस्तक सापडले नाही",
           },
         },
       },

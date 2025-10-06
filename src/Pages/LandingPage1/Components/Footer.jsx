@@ -5,11 +5,12 @@ import { useTranslation } from "react-i18next";
 
 function Footer() {
   const navigate = useNavigate();
-  const { t } = useTranslation("translation"); // specify namespace explicitly
+  const { t } = useTranslation("translation"); // explicit namespace
 
   return (
     <div className="footer">
       <div className="subfoot">
+        {/* Logo Section */}
         <a href="#" className="logo">
           <img
             src={Logo}
@@ -20,7 +21,7 @@ function Footer() {
         <h3>{t("landingPage.footer.title")}</h3>
         <p>{t("landingPage.footer.description")}</p>
 
-        {/* Button navigates to AdminLogin */}
+        {/* Admin Login Button */}
         <button
           type="button"
           className="admin-btn"
@@ -29,12 +30,14 @@ function Footer() {
           {t("landingPage.footer.adminButton")}
         </button>
 
+        {/* Footer Details: Contact, Address, Social Links */}
         <div className="details">
           <div className="contact-address">
             <div className="contact">
               <h4>{t("landingPage.footer.contact.title")}</h4>
               <p>
-                {t("landingPage.footer.contact.phone")} <br /> {t("landingPage.footer.contact.email")}
+                {t("landingPage.footer.contact.phone")} <br />{" "}
+                {t("landingPage.footer.contact.email")}
               </p>
             </div>
 
@@ -52,6 +55,7 @@ function Footer() {
           </div>
         </div>
 
+        {/* Copyright Text */}
         <div className="comp">{t("landingPage.footer.copyright")}</div>
       </div>
     </div>

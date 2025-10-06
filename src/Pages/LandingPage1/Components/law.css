@@ -1,16 +1,15 @@
+/* Container for avatar and radial laws */
 .radial-container {
   position: relative;
-  width: min(40vw, 320px);   /* responsive size - change as needed */
+  width: min(40vw, 320px);
   margin: -28rem 0;
   margin-left: 85%;
- 
   aspect-ratio: 1/1;
   display: grid;
   place-items: center;
-  
 }
 
-/* Avatar */
+/* Avatar styling */
 .avatar {
   position: relative;
   width: clamp(140px, 30vw, 260px);
@@ -27,7 +26,7 @@
   border: 6px solid white;
 }
 
-/* Laws wrapper */
+/* Wrapper for all laws */
 .laws {
   position: absolute;
   inset: 0;
@@ -36,7 +35,7 @@
   z-index: 1;
 }
 
-/* Law labels */
+/* Individual law styling */
 .law {
   --radius: clamp(110px, 26vw, 180px);
   position: absolute;
@@ -54,7 +53,7 @@
   transform: translate(-50%, -50%);
 }
 
-/* Positions */
+/* Positioning each law around avatar */
 .law:nth-child(1) {
   transform: translate(-69%, -250%) rotate(-90deg) translateY(calc(-1 * var(--radius))) rotate(90deg);
 }
@@ -80,11 +79,11 @@
   text-align: justify;
 }
 
-/* ✅ RESPONSIVE FIX for mobile (below 600px) */
+/* Responsive styling for mobile */
 @media (max-width: 600px) {
   .radial-container {
-    width: 90vw;       /* shrink container */
-    margin: 2rem auto; /* center it */
+    width: 90vw;
+    margin: 2rem auto;
     margin-left: 2%;
   }
 
@@ -93,19 +92,18 @@
   }
 
   .avatar {
-    width: 120px;      /* smaller avatar */
+    width: 120px;
   }
 
   .law {
-    --radius: 90px;    /* reduce circle radius */
-    font-size: 0.7rem; /* smaller text */
+    --radius: 90px;
+    font-size: 0.7rem;
     padding: 0.25rem 0.45rem;
   }
 
   .law:nth-child(6) {
-    width: 250px;      /* shrink description box */
+    width: 250px;
     font-size: 0.7rem;
     margin-top: 3%;
-    
   }
 }

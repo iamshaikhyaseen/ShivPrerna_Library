@@ -54,9 +54,13 @@
   color: #000 !important;
 }
 
+.card-author{
+  margin-bottom: 3% !important;
+}
+
 .RareBookcard .card-body > p,
 .RareBookcard .card-body > .RareBookcardText {
-  margin: 0 !important;
+  margin: 0 ;
   padding: 0 !important;
   font-size: 0.9rem !important;
   line-height: 1.5 !important;
