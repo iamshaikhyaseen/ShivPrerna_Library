@@ -1,6 +1,6 @@
 // import Landingpage from "./Pages/LandingPage/Landingpage";
 // import Management from "./Pages/Management/Management.jsx";
-// import Events from "./Pages/Events/Events.jsx";
+import Events from "./Pages/Events/Events.jsx";
 // import History from "./Pages/History/History.jsx";
 // import EnrollNow from "./Pages/EnrollNow/EnrollNow";
 // import RareBooks from "./Pages/RareBooks/RareBooks.jsx";
@@ -12,12 +12,12 @@ function App() {
     <>
       {/* <Landingpage/> */}
       {/* <Management /> */}
-      {/* <Events /> */}
+      <Events />
       {/* <History /> */}
       {/* <EnrollNow/> */}
       {/* <RareBooks/> */}
       {/* <AdminLogin/> */}
-      <AdminPanel/>
+      {/* <AdminPanel/> */}
     </>
   );
 }
