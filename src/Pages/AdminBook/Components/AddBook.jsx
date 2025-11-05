@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import booksData from "../../../BooksData.js";
 import { useTranslation } from "react-i18next";
 import "./AddBook.css";
 import { api,privateApi } from "../../../axiosConfig.js";
+import { toast,ToastContainer } from "react-toastify";
 
 function AddBook() {
   const { t } = useTranslation();
@@ -25,20 +25,21 @@ function AddBook() {
     title: "",
     author: "",
     category: "",
+    rackNo:"",
   });
 
   const categories = [
     "NOVEL ( कादंबरी )",
     "DRAMA ( नाटक )",
-    "MAGAZINE ( मासिक )",
+    "EXPERIENCE STATEMENT ( अनुभव कथन )",
     "HISTORICAL ( ऐतिहासिक )",
     "RELIGIOUS ( धार्मिक )",
-    "POLITICAL ( राजकीय )",
-    "POEM ( कविता )",
+    "AUTOBIOGRAPHY ( आत्मचरित्र )",
+    "SPIRITUAL ( आध्यात्मिक )",
     "LITERATURE ( साहित्य )",
-    "FICTION ( काल्पनिक )",
-    "NON_FICTION ( अकाल्पनिक )",
-    "RECIPE ( रेसिपी )",
+    "HEALTH ( आरोग्य )",
+    "STORY ( कथा )",
+    "POEM ( कविता )",
   ];
 
 
@@ -47,11 +48,9 @@ function AddBook() {
       try{
         setLoading(true);
         const response=await api.get("/books/allBooks");
-        console.log(response.data);
         if(Array.isArray(response.data)){
           setBooks(response.data);
         }else{
-          console.warn("Data structure",response.data);
           setBooks([]);
         }
       }
@@ -85,14 +84,14 @@ function AddBook() {
   // Open Add Book popup
   const openAddPopup = () => {
     setIsUpdateMode(false);
-    setBookForm({ id: "", title: "", author: "", category: "" });
+    setBookForm({ id: "", title: "", author: "", category: "", rackNo:"" });
     setShowAddPopup(true);
   };
 
   // Open Update popup
   const openUpdatePopup = () => {
     if (!selectedBook) {
-      alert("Please select a Book");
+      toast.warn("Please select a Book!");
       return;
     }
     setIsUpdateMode(true);
@@ -102,41 +101,40 @@ function AddBook() {
 
   // Add or Update book
   const handleSaveBook = async () => {
-    if (!bookForm.id || !bookForm.title || !bookForm.author || !bookForm.category) {
-      alert("Please fill in all fields");
+    if (!bookForm.id || !bookForm.title || !bookForm.author || !bookForm.category || !bookForm.rackNo) {
+      toast.warn("Please fill all the fields");
       return;
     }
 
     if (isUpdateMode) {
-      // setBooks(
-        // books.map((b) => (b.id === bookForm.id ? { ...bookForm } : b))
-        // );
         try{
-        console.log("Book for updating: "+bookForm.id,bookForm.author,bookForm.category,bookForm.title);
-        const bookObject={title:bookForm.title,author:bookForm.author,category:bookForm.category};
+        const bookObject={title:bookForm.title,author:bookForm.author,category:bookForm.category,rackNo:bookForm.rackNo};
         const response=await privateApi.put(`/books/update/${bookForm.id}`,bookObject);
         console.log("updateBookResponse: ",response.data);
         setBooks(books.map(b => (b.id === bookForm.id ? response.data : b)));
+        toast.success("Book updated successfully!");
         
       }catch(err){
         console.error("Error Adding Book: "+err);
+        toast.error("Unable to update book");
       }
       
     } else {
       try{
-        console.log("Book for adding: "+bookForm.id,bookForm.author,bookForm.category,bookForm.title);
-        const bookObject={id:bookForm.id,title:bookForm.title,author:bookForm.author,category:bookForm.category};
+        const bookObject={id:bookForm.id,title:bookForm.title,author:bookForm.author,category:bookForm.category,rackNo:bookForm.rackNo};
         const response=await privateApi.post("/books/addBook",bookObject);
         console.log("addBookResponse: ",response.data);
         setBooks([...books,response.data]);
+        toast.success("Book added successfully!");
       }catch(err){
         console.error("Error Adding Book: "+err);
+        toast.error("Unable to add book");
       }
     }
 
     setShowAddPopup(false);
     setSelectedBook(null);
-    setBookForm({ id: "", title: "", author: "", category: "" });
+    setBookForm({ id: "", title: "", author: "", category: "",rackNo:"" });
   };
 
   // Select a book row
@@ -147,33 +145,26 @@ function AddBook() {
   // Delete book with confirmation
   const handleDeleteBook = async () => {
     if (!selectedBook) {
-      alert("Please select a Book");
+      toast.warn("Please select a book");
       return;
     }
     // setConfirmDelete(true);
     console.log("Deleting book: "+selectedBook.id);
     try{
       const response=await privateApi.delete(`/books/${selectedBook.id}`);
-      console.log("DeleteResponse: "+response.data);
       setBooks(books.filter(b => b.id !== selectedBook.id));
+      toast.success("Book deleted successfully!");
+
     }catch(err){
       console.error("Book delete failed: "+err);
+      toast.error("Unable to delete book");
     }
     
   };
 
-  // const confirmDeleteYes = () => {
-  //   setBooks(books.filter((b) => b.id !== selectedBook.id));
-  //   setSelectedBook(null);
-  //   setConfirmDelete(false);
-  // };
-
-  // const confirmDeleteCancel = () => {
-  //   setConfirmDelete(false);
-  // };
-
   return (
     <div className="allbooks-container">
+      <ToastContainer position="bottom-right" autoClose={2000} />
       <h2 className="mb-4 text-center">Manage Books</h2>
 
       <input
@@ -221,6 +212,7 @@ function AddBook() {
               <th>{t("AllBooks.BookTitle")}</th>
               <th>{t("AllBooks.Author")}</th>
               <th>{t("AllBooks.Category")}</th>
+              <th>{t("AllBooks.RackNo")}</th>
               <th>Select</th>
             </tr>
           </thead>
@@ -235,6 +227,7 @@ function AddBook() {
                   <td>{book.title}</td>
                   <td>{book.author}</td>
                   <td>{book.category}</td>
+                  <td>{book.rackNo}</td>
                   <td>
                     <button
                       className="btn btn-outline-primary btn-sm"
@@ -282,6 +275,14 @@ function AddBook() {
               value={bookForm.author}
               onChange={(e) =>
                 setBookForm({ ...bookForm, author: e.target.value })
+              }
+            />
+            <input
+              type="text"
+              placeholder="RackNo"
+              value={bookForm.rackNo}
+              onChange={(e) =>
+                setBookForm({ ...bookForm, rackNo: e.target.value })
               }
             />
             <select

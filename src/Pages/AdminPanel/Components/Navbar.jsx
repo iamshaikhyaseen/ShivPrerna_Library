@@ -5,12 +5,13 @@ function Navbar() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
+    
     sessionStorage.removeItem("auth");
-    navigate("/"); // redirects to Landing Page
+    navigate("/");
   };
 
   const handleHome = () => {
-    navigate("/admin/dashboard"); // redirects to Admin Panel
+    navigate("/admin/dashboard");
   };
 
   return (

@@ -1,5 +1,4 @@
 import "./ImageCards.css";
-import G1 from "../../../assets/GovOfficer.png";
 import G2 from "../../../assets/Libraryhead.png";
 import SubImageCards from "./SubImageCards.jsx";
 import { useTranslation } from "react-i18next";
@@ -13,7 +12,7 @@ function ImageCards() {
       <div className="MainCard">
         <div className="ManagementCard">
           <div className="GovImg">
-            <img src={G1} className="card-img-top" alt="Officer" />
+            <img src={G2} className="card-img-top" alt="Officer" />
           </div>
           <div className="card-body">
             <h5>{t("managementPage.cards.0.name")}</h5>
@@ -28,7 +27,7 @@ function ImageCards() {
       </div>
 
       {/* Second Row */}
-      <div className="SecondRow">
+      {/* <div className="SecondRow">
         <div className="MainCard">
           <div className="ManagementCard">
             <div className="GovImg">
@@ -42,7 +41,7 @@ function ImageCards() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Third Row */}
       <div className="ThirdRow">

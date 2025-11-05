@@ -1,8 +1,8 @@
-import LibraryOpening1 from "../../../assets/History/LibraryOpening1.png";
-import LibraryOpening2 from "../../../assets/History/LibraryOpening2.png";
-import LibraryOpening3 from "../../../assets/History/LibraryOpening3.png";
-import LibraryOpening4 from "../../../assets/History/LibraryOpening4.png";
-import LibraryOpening5 from "../../../assets/History/LibraryOpening5.png";
+import LibraryOpening1 from "../../../assets/History/img_1.jpg";
+import LibraryOpening2 from "../../../assets/History/img_2.jpg";
+import LibraryOpening3 from "../../../assets/History/img_3.jpg";
+import LibraryOpening4 from "../../../assets/History/img_4.jpg";
+
 import "./Carousel.css";
 
 function Carousel() {
@@ -48,7 +48,7 @@ function Carousel() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src={LibraryOpening2}
+                src={LibraryOpening1}
                 className="d-block w-100"
                 alt="History1"
               />
@@ -56,7 +56,7 @@ function Carousel() {
 
             <div className="carousel-item">
               <img
-                src={LibraryOpening1}
+                src={LibraryOpening2}
                 className="d-block w-100"
                 alt="History2"
               />
@@ -80,7 +80,7 @@ function Carousel() {
 
             <div className="carousel-item">
               <img
-                src={LibraryOpening5}
+                src={LibraryOpening2}
                 className="d-block w-100"
                 alt="History5"
               />

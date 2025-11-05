@@ -1,7 +1,7 @@
 import "./AdminPanel.css";
 import Navabar from "./Components/Navbar.jsx";
 import ManageDetails from "./Components/ManageDetails.jsx";
-import Footer from "../LandingPage/Components/Footer.jsx";
+import Footer from "../LandingPage1/Components/Footer.jsx";
 
 function AdminPanel() {
   return (

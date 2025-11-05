@@ -1,8 +1,8 @@
-import img1 from "../../../assets/Library5.png";
-import img2 from "../../../assets/Library2.png";
-import img3 from "../../../assets/Library3.png";
-import img4 from "../../../assets/Library4.png";
-import img5 from "../../../assets/Library1.png";
+import img1 from "../../../assets/EnrollNow/img1.jpg";
+import img2 from "../../../assets/EnrollNow/img_2.jpg";
+import img3 from "../../../assets/EnrollNow/img_3.jpg";
+import img4 from "../../../assets/EnrollNow/img_4.jpg";
+import img5 from "../../../assets/EnrollNow/img_5.jpg";
 import "./Carousel.css";
 
 function Carousel() {

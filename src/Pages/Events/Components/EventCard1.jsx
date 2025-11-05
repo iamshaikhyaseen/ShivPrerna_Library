@@ -1,18 +1,18 @@
 import "./EventCard1.css";
 import { useTranslation } from "react-i18next";
 
-import E11 from "../../../assets/Events/Event1.1.webp";
-import E12 from "../../../assets/Events/Event1.2.webp";
-import E13 from "../../../assets/Events/Event1.3.webp";
-import E21 from "../../../assets/Events/Event2.1.webp";
-import E22 from "../../../assets/Events/Event2.2.webp";
-import E23 from "../../../assets/Events/Event2.3.webp";
-import E31 from "../../../assets/Events/Event3.1.webp";
-import E32 from "../../../assets/Events/Event3.2.webp";
-import E33 from "../../../assets/Events/Event3.3.webp";
-import E41 from "../../../assets/Events/Event4.1.webp";
-import E42 from "../../../assets/Events/Event4.2.webp";
-import E43 from "../../../assets/Events/Event4.3.webp";
+import E11 from "../../../assets/History/img_1.jpg";
+import E12 from "../../../assets/History/img_2.jpg";
+import E13 from "../../../assets/History/img_3.jpg";
+import E21 from "../../../assets/Events/ev2_img1.jpg";
+import E22 from "../../../assets/Events/ev2_img2.jpg";
+import E23 from "../../../assets/Events/ev2_img3.jpg";
+import E31 from "../../../assets/Events/ev1_img1.jpg";
+import E32 from "../../../assets/Events/ev1_img2.jpg";
+import E33 from "../../../assets/Events/ev1_img3.jpg";
+import E41 from "../../../assets/Events/env4_img1.jpg";
+import E42 from "../../../assets/Events/env4_img2.jpg";
+import E43 from "../../../assets/Events/env4_img3.jpg";
 
 function EventCard1() {
   const { t } = useTranslation();

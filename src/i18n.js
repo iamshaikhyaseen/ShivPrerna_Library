@@ -25,15 +25,15 @@ i18next
               heading: "Categories",
               novel: "Novel",
               drama: "Drama",
-              magazine: "Magazine",
+              experienceStatement: "Exp_Statement",
               historical: "Historical",
               religious: "Religious",
-              political: "Political",
+              autobiography: "Autobiography",
               poem: "Poem",
               literature: "Literature",
-              fiction: "Fiction",
-              nonFiction: "Non-Fiction",
-              recipe: "Recipe",
+              spiritual: "Spiritual",
+              health: "Health",
+              story: "Story",
               viewMore: "View more...",
               enrollNow: "Enroll Now",
             },
@@ -170,17 +170,17 @@ i18next
               {
                 id: "card1",
                 description:
-                  "On 12th January 2025, the library organized National Youth Day Reading Circle to celebrate Swami Vivekananda's birth anniversary. The event drew more than fifty students and local youth who gathered to read and discuss his writings. The highlight was a group discussion on how his principles could be applied in modern times. The outcome was highly positive, as participants expressed a renewed sense of motivation and pledged to continue regular reading circles. translate this in Marathi.",
+                  "The foundation of ShivPrerna Library was a momentous occasion marked by the gracious presence of Dr. Shrikant Eknath Shinde, Hon’ble Member of Parliament, who inaugurated the library. His support and vision for promoting education and reading culture inspired the establishment of this knowledge hub. The event celebrated the beginning of a new chapter in community learning, aimed at providing students and readers with a space to explore, grow, and stay motivated through the power of books.",
               },
               {
                 id: "card2",
                 description:
-                  "On 21st February 2025, the library conducted International Mother Language Day Celebrations with over a hundred community members. The event featured storytelling sessions in Marathi, Hindi, and Urdu, along with a poetry recital by school children. A highlight was the multilingual reading contest, which encouraged young participants to present short passages in their mother tongue. The outcome reflected deeper awareness of linguistic diversity and pride in cultural roots.",
+                  "ShivPrerna Library had the honor of welcoming renowned Marathi actor Praveen Tarde for a special visit. His presence brought great enthusiasm and inspiration to the members and visitors of the library. During his visit, he interacted with readers, shared his thoughts on the importance of education, culture, and literature, and encouraged the youth to stay connected with books and learning. The event created a memorable and motivating experience for everyone present.",
               },
               {
                 id: "card3",
                 description:
-                  "On 7th March 2025, the library hosted Women's Literature Exhibition as part of International Women's Day. The purpose was to highlight works authored by Indian women writers, thereby inspiring readers to appreciate their contribution to literature and social reforms.",
+                  "On the occasion of International Women’s Day, ShivPrerna Library organized a special event dedicated to empowering young girls through education. School girls from the local community were invited to the library, where they participated in engaging discussions and activities highlighting the importance of learning and personal growth. The event aimed to inspire confidence, nurture curiosity, and motivate these young students to pursue their dreams through the power of knowledge.",
               },
               {
                 id: "card4",
@@ -205,13 +205,13 @@ i18next
             },
             cards: [
               {
-                name: "Shri Rajesh Kulkarni",
-                designation: "Government Officer",
+                name: "Mrs. Tapasya Neve",
+                designation: "Chief Librarian",
                 description:
                   "We sincerely thank our management for their constant support and guidance in running the library smoothly. Their valuable contribution and commitment play a vital role in creating a welcoming space for readers and learners.",
               },
               { name: "Smt. Meenakshi Sen", designation: "Chief Librarian" },
-              { name: "Smt. Anjali Patel", designation: "Receptionist" },
+              { name: "Mrs. Jayshree Patil", designation: "Receptionist" },
               { name: "Shri Mohan Das", designation: "Member" },
             ],
             subHeader: {
@@ -272,10 +272,11 @@ i18next
           AllBooks: {
             title: "Book List",
             category: "All Categories",
-            BookId: "Book ID",
+            BookId: "Book_ID",
             BookTitle: "Book Title",
             Author: "Author",
             Category: "Category",
+            RackNo:"Rack_No",
             searchPlaceholder: "Search by book title...",
             noBookFound: "No book found",
           },
@@ -297,15 +298,15 @@ i18next
               heading: "श्रेणी",
               novel: "कादंबरी",
               drama: "नाटक",
-              magazine: "मासिक",
+              experienceStatement: "अनुभव विधान",
               historical: "ऐतिहासिक",
               religious: "धार्मिक",
-              political: "राजकीय",
+              autobiography: "आत्मचरित्र",
               poem: "कविता",
               literature: "साहित्य",
-              fiction: "काल्पनिक",
-              nonFiction: "अकाल्पनिक",
-              recipe: "पाककृती",
+              spiritual: "आध्यात्मिक",
+              health: "आरोग्य",
+              story: "कथा",
               viewMore: "आणखी पहा...",
               enrollNow: "नोंदणी करा",
             },
@@ -441,17 +442,17 @@ i18next
               {
                 id: "card1",
                 description:
-                  "१२ जानेवारी २०२५ रोजी, वाचनालयाने स्वामी विवेकानंदांच्या जन्मदिनानिमित्त राष्ट्रीय युवा दिन वाचन सत्राचे आयोजन केले. या कार्यक्रमात पन्नासहून अधिक विद्यार्थी आणि स्थानिक युवक उपस्थित होते, जे त्यांच्या लेखनांचा अभ्यास करण्यासाठी आणि चर्चा करण्यासाठी एकत्र आले. विशेष म्हणजे, त्यांच्या तत्त्वांचा आधुनिक काळात कसा उपयोग करता येईल यावर गट चर्चेचे आयोजन करण्यात आले. कार्यक्रमाचा परिणाम अत्यंत सकारात्मक होता, कारण सहभागीनी नव्याने प्रेरणा मिळाल्याचे व्यक्त केले आणि नियमित वाचन सत्र सुरू ठेवण्याची प्रतिज्ञा केली.",
+                  "शिवप्रेरणा लायब्ररीच्या स्थापनेचा ऐतिहासिक क्षण मा. डॉ. श्रीकांत एकनाथ शिंदे, खासदार यांच्या उपस्थितीत साजरा करण्यात आला. त्यांच्या हस्ते लायब्ररीचे उद्घाटन करण्यात आले. शिक्षण आणि वाचनसंस्कृतीला प्रोत्साहन देण्याच्या त्यांच्या दृष्टीकोनामुळे या ज्ञानकेंद्राची निर्मिती प्रेरित झाली. या कार्यक्रमाने समाजातील शिक्षण आणि वाचनासाठी नव्या पर्वाची सुरुवात केली, ज्याचा उद्देश विद्यार्थ्यांना आणि वाचकांना ज्ञानाच्या माध्यमातून प्रगती करण्यासाठी प्रेरणा देणे हा आहे.",
               },
               {
                 id: "card2",
                 description:
-                  "२१ फेब्रुवारी २०२५ रोजी वाचनालयात आंतरराष्ट्रीय मातृभाषा दिन उत्सवाचे आयोजन करण्यात आले, ज्यामध्ये शंभराहून अधिक समुदाय सदस्य सहभागी झाले. कार्यक्रमात मराठी, हिंदी आणि उर्दू भाषेत कथा सांगण्याचे सत्र तसेच शाळकरी मुलांनी सादर केलेले कविता वाचन होते. विशेष आकर्षण ठरलेले बहुभाषिक वाचन स्पर्धेत लहान सहभागीनी त्यांच्या मातृभाषेत छोटे उतारे सादर केले. या कार्यक्रमाचा परिणाम म्हणजे भाषिक विविधतेबद्दल अधिक सखोल जागरूकता आणि सांस्कृतिक मुळांविषयीचा अभिमान प्रकट झाला.",
+                  "शिवप्रेरणा लायब्ररीला सुप्रसिद्ध मराठी अभिनेते प्रवीण तर्डे यांच्या विशेष भेटीचा मान मिळाला. त्यांच्या उपस्थितीने लायब्ररीतील सदस्य आणि पाहुण्यांमध्ये उत्साह आणि प्रेरणा निर्माण झाली. भेटीदरम्यान त्यांनी वाचकांशी संवाद साधला, शिक्षण, संस्कृती आणि साहित्याच्या महत्त्वावर विचार मांडले आणि तरुणांना पुस्तकांशी वाचनाची नाळ कायम ठेवण्यासाठी प्रोत्साहित केले. हा कार्यक्रम सर्वांसाठी संस्मरणीय आणि प्रेरणादायी ठरला.",
               },
               {
                 id: "card3",
                 description:
-                  "७ मार्च २०२५ रोजी वाचनालयात आंतरराष्ट्रीय महिला दिनानिमित्त ‘महिला साहित्य प्रदर्शनी’चे आयोजन करण्यात आले. या कार्यक्रमाचा उद्देश भारतीय महिला लेखिकांनी लिहिलेल्या साहित्यकृतींचे दर्शन घडवणे होता, ज्यामुळे वाचकांना त्यांच्या साहित्य आणि सामाजिक सुधारणा क्षेत्रातील योगदानाची जाण व प्रेरणा मिळाली.",
+                  "आंतरराष्ट्रीय महिला दिनाच्या निमित्ताने शिवप्रेरणा लायब्ररीत मुलींच्या सक्षमीकरणासाठी विशेष कार्यक्रम आयोजित करण्यात आला. परिसरातील शाळकरी मुलींना लायब्ररीत आमंत्रित करण्यात आले होते, जिथे त्यांनी शिक्षण आणि वैयक्तिक विकासाचे महत्त्व अधोरेखित करणाऱ्या चर्चांमध्ये आणि उपक्रमांमध्ये भाग घेतला. या कार्यक्रमाचा उद्देश आत्मविश्वास वाढवणे, जिज्ञासा प्रोत्साहित करणे आणि ज्ञानाच्या शक्तीच्या माध्यमातून त्यांच्या स्वप्नांच्या दिशेने वाटचाल करण्यासाठी त्यांना प्रेरित करणे हा होता.",
               },
               {
                 id: "card4",
@@ -476,13 +477,13 @@ i18next
             },
             cards: [
               {
-                name: "श्री. राजेश कुलकर्णी",
-                designation: "शासकीय अधिकारी",
+                name: "श्रीमती तपस्या नेवे",
+                designation: "मुख्य ग्रंथपाल",
                 description:
                   "आमच्या व्यवस्थापनाचे मनःपूर्वक आभार मानतो, कारण त्यांच्या सततच्या पाठिंबा आणि मार्गदर्शनामुळे ग्रंथालय सुरळीतपणे चालविणे शक्य झाले आहे. त्यांचे मौल्यवान योगदान आणि बांधिलकी वाचक व शिकणाऱ्यांसाठी स्वागतार्ह वातावरण निर्माण करण्यात अत्यंत महत्त्वाची भूमिका बजावतात.",
               },
               { name: "श्रीमती. मीनाक्षी सेन", designation: "मुख्य ग्रंथपाल" },
-              { name: "श्रीमती. अंजली पटेल", designation: "स्वागतिका" },
+              { name: "श्रीमती जयश्री पाटील", designation: "स्वागतिका" },
               { name: "श्री. मोहन दास", designation: "सदस्य" },
             ],
             subHeader: {
@@ -547,6 +548,7 @@ i18next
             BookTitle: "पुस्तकाचे नाव",
             Author: "लेखक",
             Category: "श्रेणी",
+            RackNo:"रॅक_क्र",
             searchPlaceholder: "पुस्तकाचे नाव शोधा...",
             noBookFound: "कोणतेही पुस्तक सापडले नाही",
           },

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import membersData from "../../../Members.js"; 
 import "./AddMember.css";
 import { privateApi } from "../../../axiosConfig.js";
+import { toast, ToastContainer } from "react-toastify";
 
 function AddMember() {
   const [members, setMembers] = useState([]);
@@ -11,7 +11,7 @@ function AddMember() {
   const [showAddPopup, setShowAddPopup] = useState(false);
   const [isUpdateMode, setIsUpdateMode] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
-    const [loading,setLoading]=useState(true);
+  const [loading,setLoading]=useState(true);
   const [memberForm, setMemberForm] = useState({
     id: 0,
     name: "",
@@ -19,7 +19,7 @@ function AddMember() {
     email: "",
     address: "",
   });
-
+ 
   useEffect(()=>{
       const fetchMembers=async ()=>{
         try{
@@ -29,13 +29,11 @@ function AddMember() {
           if(Array.isArray(response.data)){
             setMembers(response.data);
           }else{
-            console.warn("Data structure",response.data);
             setMembers([]);
           }
         }
         catch(err){
           console.error("Error fetching members",err);
-          setError("Failed to fetch members. Please try again later.");
           setMembers([]);
         }
         finally{
@@ -59,49 +57,63 @@ function AddMember() {
 
   const openUpdatePopup = () => {
     if (!selectedMember) {
-      alert("Please select a Member");
+      toast.warn("Please select a Membber");
+      // alert("Please select a Member");
       return;
     }
     setIsUpdateMode(true);
-    setMemberForm({ ...selectedMember });
+    setMemberForm({
+  id: selectedMember.id || "",
+  name: selectedMember.name || "",
+  phoneNo: selectedMember.phoneNo || "",
+  email: selectedMember.email || "",
+  address: selectedMember.address || "",
+});
     setShowAddPopup(true);
   };
 
   const handleSaveMember = async () => {
     if (
-      !memberForm.id ||
       !memberForm.name ||
       !memberForm.phoneNo ||
       !memberForm.email ||
       !memberForm.address
     ) {
-      alert("Please fill in all fields");
+      toast.warn("Please fill all the fileds!");
       return;
     }
+    const phoneRegex = /^[0-9]{10}$/;
+      if (!phoneRegex.test(memberForm.phoneNo)) {
+        toast.warn("Phone number must be a 10-digit number!");
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(memberForm.email)) {
+        toast.warn("Please enter a valid email address!");
+        return;
+      }
 
     if (isUpdateMode) {
-    //   setMembers(
-    //     members.map((m) => (m.id === memberForm.id ? { ...memberForm } : m))
-    //   );
+
     try{
             const memberObject={name:memberForm.name,phoneNo:memberForm.phoneNo,email:memberForm.email,address:memberForm.address};
             const response=await privateApi.put(`/members/update/${memberForm.id}`,memberObject);
-            console.log("updateMemberResponse: ",response.data);
             setMembers(members.map(b => (b.id === memberForm.id ? response.data : b)));
-            
+            toast.success("Member updated successfully!");
           }catch(err){
             console.error("Error Adding Member: "+err);
+            toast.error("Unable to update member");
           }
     } else {
-    //   setMembers([...members, memberForm]);
     try{
-            // console.log("Book for adding: "+bookForm.id,bookForm.author,bookForm.category,bookForm.title);
             const memberObject={id:memberForm.id,name:memberForm.name,phoneNo:memberForm.phoneNo,email:memberForm.email,address:memberForm.address};
             const response=await privateApi.post("/members/add",memberObject);
-            console.log("addMemberResponse: ",response.data);
             setMembers([...members,response.data]);
+            toast.success("Member added successfully!");
           }catch(err){
             console.error("Error Adding Member: "+err);
+            toast.error("Unable to add member!");
           }
     }
 
@@ -116,31 +128,23 @@ function AddMember() {
 
   const handleDeleteMember = async () => {
     if (!selectedMember) {
-      alert("Please select a Member");
+      toast.warn("Please select a Membber");
       return;
     }
-    // setConfirmDelete(true);
+
     try{
           const response=await privateApi.delete(`/members/${selectedMember.id}`);
-          console.log("DeleteResponse: "+response.data);
           setMembers(members.filter(b => b.id !== selectedMember.id));
+          toast.success("Member deleted successfully!");
         }catch(err){
           console.error("Member delete failed: "+err);
+          toast.error("Unable to delete Member");
         }
   };
 
-//   const confirmDeleteYes = () => {
-//     setMembers(members.filter((m) => m.id !== selectedMember.id));
-//     setSelectedMember(null);
-//     setConfirmDelete(false);
-//   };
-
-//   const confirmDeleteCancel = () => {
-//     setConfirmDelete(false);
-//   };
-
   return (
     <div className="allbooks-container">
+    <ToastContainer position="bottom-right" autoClose={2000} />
       <h2 className="mb-4 text-center">Manage Members</h2>
 
       <input
@@ -220,7 +224,7 @@ function AddMember() {
               placeholder="Member ID"
               value={memberForm.id}
               onChange={(e) => setMemberForm({ ...memberForm, id: e.target.value })}
-              disabled={isUpdateMode}
+              disabled
             />
             <input
               type="text"
@@ -232,7 +236,7 @@ function AddMember() {
               type="text"
               placeholder="Number"
               value={memberForm.phoneNo}
-              onChange={(e) => setMemberForm({ ...memberForm, number: e.target.value })}
+              onChange={(e) => setMemberForm({ ...memberForm, phoneNo: e.target.value })}
             />
             <input
               type="email"

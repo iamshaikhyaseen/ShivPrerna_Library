@@ -10,15 +10,15 @@ function SubNav() {
   const categories = [
     { key: "novel", label: "NOVEL ( कादंबरी )" },
     { key: "drama", label: "DRAMA ( नाटक )" },
-    { key: "magazine", label: "MAGAZINE ( मासिक )" },
+    { key: "experienceStatement", label: "EXPERIENCE STATEMENT ( अनुभव कथन )" },
     { key: "historical", label: "HISTORICAL ( ऐतिहासिक )" },
     { key: "religious", label: "RELIGIOUS ( धार्मिक )" },
-    { key: "political", label: "POLITICAL ( राजकीय )" },
+    { key: "autobiography", label: "AUTOBIOGRAPHY ( आत्मचरित्र )" },
     { key: "poem", label: "POEM ( कविता )" },
     { key: "literature", label: "LITERATURE ( साहित्य )" },
-    { key: "fiction", label: "FICTION ( काल्पनिक )" },
-    { key: "nonFiction", label: "NON_FICTION ( अकाल्पनिक )" },
-    { key: "recipe", label: "RECIPE ( रेसिपी )" },
+    { key: "spiritual", label: "LITERATURE ( साहित्य )" },
+    { key: "health", label: "HEALTH ( आरोग्य )" },
+    { key: "story", label: "STORY ( कथा )" },
   ];
 
   // Navigate to books page filtered by category
@@ -45,7 +45,9 @@ function SubNav() {
               {t(`landingPage.categories.${cat.key}`)}
             </span>
           </li>
+          
         ))}
+        
       </ul>
     </div>
   );

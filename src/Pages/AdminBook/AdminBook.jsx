@@ -1,11 +1,12 @@
 import Navbar from "../AdminPanel/Components/Navbar";
 import AddBook from "./Components/AddBook";
-// import './AdminBook.css'
+import Footer from "../LandingPage1/Components/Footer";
 function AdminBook() {
   return (
     <div>
       <Navbar/>
       <AddBook/>
+      <Footer/>
     </div>
   );
 }

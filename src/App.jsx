@@ -7,7 +7,6 @@ import Events from "./Pages/Events/Events.jsx";
 import Management from "./Pages/Management/Management.jsx";
 import EnrollNow from "./Pages/EnrollNow/EnrollNow.jsx";
 import AdminLogin from "./Pages/AdminLogin/AdminLogin.jsx";
-import SubNav from "./Pages/LandingPage1/Components/SubNav.jsx";
 import Books from "./Pages/AllBooks/AllBooks.jsx";
 import AdminPanel from './Pages/AdminPanel/AdminPanel.jsx'
 import AdminBook from "./Pages/AdminBook/AdminBook.jsx"

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from "react-i18next";
@@ -18,15 +18,15 @@ function Books() {
   const categories = [
     "NOVEL ( कादंबरी )",
     "DRAMA ( नाटक )",
-    "MAGAZINE ( मासिक )",
+    "EXPERIENCE STATEMENT ( अनुभव कथन )",
     "HISTORICAL ( ऐतिहासिक )",
     "RELIGIOUS ( धार्मिक )",
-    "POLITICAL ( राजकीय )",
-    "POEM ( कविता )",
+    "AUTOBIOGRAPHY ( आत्मचरित्र )",
+    "SPIRITUAL ( आध्यात्मिक )",
     "LITERATURE ( साहित्य )",
-    "FICTION ( काल्पनिक )",
-    "NON_FICTION ( अकाल्पनिक )",
-    "RECIPE ( रेसिपी )",
+    "HEALTH ( आरोग्य )",
+    "STORY ( कथा )",
+    "POEM ( कविता )",
   ];
 
   useEffect(()=>{
@@ -106,6 +106,7 @@ function Books() {
               <th>{t("AllBooks.BookTitle")}</th>
               <th>{t("AllBooks.Author")}</th>
               <th>{t("AllBooks.Category")}</th>
+              <th>{t("AllBooks.RackNo")}</th>
             </tr>
           </thead>
           <tbody>
@@ -116,6 +117,7 @@ function Books() {
                   <td>{book.title}</td>
                   <td>{book.author}</td>
                   <td>{book.category}</td>
+                  <td>{book.rackNo}</td>
                 </tr>
               ))
             ) : (

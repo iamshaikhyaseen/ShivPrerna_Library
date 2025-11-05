@@ -50,8 +50,8 @@
   .Historycard {
     width: 50%;
     height: 25rem;
-    min-height: 500px !important;
-    max-height: 550px !important;
+    min-height: 300px !important;
+    max-height: 350px !important;
   }
 
   .Historycard-body {

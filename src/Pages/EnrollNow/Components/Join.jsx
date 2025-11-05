@@ -1,5 +1,5 @@
 import "./Join.css";
-import img1 from "../../../assets/EnrollNow/IdCard.png";
+import img1 from "../../../assets/EnrollNow/id_card.jpg";
 import img2 from "../../../assets/EnrollNow/BookReading.webp";
 import { useTranslation } from "react-i18next";
 
