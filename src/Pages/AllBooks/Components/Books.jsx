@@ -95,9 +95,9 @@ function Books() {
 
       <div className="table-container">
         {loading ? (
-          <p className="text-center mt-3">Loading books...</p>
+          <h3 className="text-center mt-3">{t("AllBooks.fetchingData")}</h3>
         ) : error ? (
-          <p className="text-center text-danger mt-3">{error}</p>
+          <p className="text-center text-danger mt-3">{t("AllBooks.error")}</p>
         ) : (
         <table className="books-table table table-striped table-hover">
           <thead>

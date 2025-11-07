@@ -2,7 +2,7 @@
   margin-left: 6%;
   width: 90%;
 }
- 
+
 .Event1,
 .Event2,
 .Event3,
@@ -76,7 +76,7 @@
   object-fit: cover;
   border-radius: 12px;
 }
-  
+
 .Event3 .EventsCarousel,
 .Event4 .EventsCarousel {
   width: 90%;
@@ -87,8 +87,6 @@
   margin-left: 1%;
   margin-bottom: 1%;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .Contain {
@@ -147,6 +145,5 @@
   .EventsCarousel .carousel-item img,
   .EventsCarousel .carousel-item .d-block.w-100 {
     border-radius: 12px;
-    /* height: 100% !important */
   }
 }

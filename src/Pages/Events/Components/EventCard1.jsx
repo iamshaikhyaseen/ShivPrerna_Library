@@ -1,4 +1,4 @@
-import "./EventCard1.css";
+import styles from "./EventCard1.module.css";
 import { useTranslation } from "react-i18next";
 
 import E11 from "../../../assets/History/img_1.jpg";
@@ -18,10 +18,10 @@ function EventCard1() {
   const { t } = useTranslation();
 
   return (
-    <div className="Contain">
+    <div className={styles.Contain}>
       {/* First Event */}
-      <div className="Event1">
-        <div className="EventsCarousel">
+      <div className={styles.Event1}>
+        <div className={styles.EventsCarousel}>
           <div id="carouselEvent1" className="carousel slide">
             <div className="carousel-indicators">
               <button
@@ -77,17 +77,17 @@ function EventCard1() {
             </div>
           </div>
         </div>
-        <div className="Desc">
+        <div className={styles.Desc}>
           <p>{t("eventsPage.cards.0.description")}</p>
         </div>
       </div>
 
       {/* Second Event */}
-      <div className="Event2">
-        <div className="Desc2">
+      <div className={styles.Event2}>
+        <div className={styles.Desc2}>
           <p>{t("eventsPage.cards.1.description")}</p>
         </div>
-        <div className="EventsCarousel">
+        <div className={styles.EventsCarousel}>
           <div id="carouselEvent2" className="carousel slide">
             <div className="carousel-indicators">
               <button
@@ -146,8 +146,8 @@ function EventCard1() {
       </div>
 
       {/* Third Event */}
-      <div className="Event3">
-        <div className="EventsCarousel">
+      <div className={styles.Event3}>
+        <div className={styles.EventsCarousel}>
           <div id="carouselEvent3" className="carousel slide">
             <div className="carousel-indicators">
               <button
@@ -203,17 +203,17 @@ function EventCard1() {
             </div>
           </div>
         </div>
-        <div className="Desc">
+        <div className={styles.Desc}>
           <p>{t("eventsPage.cards.2.description")}</p>
         </div>
       </div>
 
       {/* Fourth Event */}
-      <div className="Event4">
-        <div className="Desc2">
+      <div className={styles.Event4}>
+        <div className={styles.Desc2}>
           <p>{t("eventsPage.cards.3.description")}</p>
         </div>
-        <div className="EventsCarousel">
+        <div className={styles.EventsCarousel}>
           <div id="carouselEvent4" className="carousel slide">
             <div className="carousel-indicators">
               <button

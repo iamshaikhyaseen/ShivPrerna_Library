@@ -8,17 +8,17 @@ function SubNav() {
 
   // List of categories with keys and display labels
   const categories = [
+    { key: "story", label: "STORY ( कथा )" },
+    { key: "poem", label: "POEM ( कविता )" },
     { key: "novel", label: "NOVEL ( कादंबरी )" },
     { key: "drama", label: "DRAMA ( नाटक )" },
-    { key: "experienceStatement", label: "EXPERIENCE STATEMENT ( अनुभव कथन )" },
+    { key: "health", label: "HEALTH ( आरोग्य )" },
+    { key: "spiritual", label: "LITERATURE ( साहित्य )" },
     { key: "historical", label: "HISTORICAL ( ऐतिहासिक )" },
     { key: "religious", label: "RELIGIOUS ( धार्मिक )" },
-    { key: "autobiography", label: "AUTOBIOGRAPHY ( आत्मचरित्र )" },
-    { key: "poem", label: "POEM ( कविता )" },
     { key: "literature", label: "LITERATURE ( साहित्य )" },
-    { key: "spiritual", label: "LITERATURE ( साहित्य )" },
-    { key: "health", label: "HEALTH ( आरोग्य )" },
-    { key: "story", label: "STORY ( कथा )" },
+    { key: "autobiography", label: "AUTOBIOGRAPHY ( आत्मचरित्र )" },
+    { key: "experienceStatement", label: "EXPERIENCE STATEMENT ( अनुभव कथन )" },
   ];
 
   // Navigate to books page filtered by category
