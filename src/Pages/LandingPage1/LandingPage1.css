@@ -29,6 +29,9 @@
   margin-left: 15%;
   margin-bottom: 10%;
 }
+.LandingPageCarousel{
+  box-shadow: 0px 1px 12px #000000;
+}
 
 .LandingPageEnrollBtn {
   margin-left: 14.5%;
@@ -44,7 +47,7 @@
   .LandingPage1 {
     height: 75vh;
     /* background: #fcf0e2; */
-    background-image:url("../../assets/ImageVert2.jpg") ;
+    background-image:url("../../assets/LandingPageFinal.jpg") ;
   }
 
   .LandingPageEnrollBtn {

@@ -28,7 +28,7 @@ function LandingPage1() {
         </div>
       </div>
 
-      <div>
+      <div >
         <Counter />
       </div>
 
