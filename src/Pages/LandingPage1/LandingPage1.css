@@ -43,8 +43,8 @@
 @media (max-width: 480px) {
   .LandingPage1 {
     height: 75vh;
-    background: #fcf0e2;
-    background-image: none;
+    /* background: #fcf0e2; */
+    background-image:url("../../assets/ImageVert2.jpg") ;
   }
 
   .LandingPageEnrollBtn {
