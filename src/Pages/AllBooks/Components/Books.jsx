@@ -21,7 +21,7 @@ function Books() {
     "EXPERIENCE STATEMENT ( अनुभव कथन )",
     "HISTORICAL ( ऐतिहासिक )",
     "RELIGIOUS ( धार्मिक )",
-    "AUTOBIOGRAPHY ( आत्मचरित्र )",
+    "AUTOBIOGRAPHY/आत्मचरित्र",
     "SPIRITUAL ( आध्यात्मिक )",
     "LITERATURE ( साहित्य )",
     "HEALTH ( आरोग्य )",
